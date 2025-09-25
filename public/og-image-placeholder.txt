@@ -1,0 +1,17 @@
+PLACEHOLDER: Create an og-image.jpg file (1200x630 pixels) with:
+
+1. Blue Stud Engineering logo prominently displayed
+2. Text: "Professional Electrical Engineering Services"
+3. Subtitle: "Power Systems • Substation Design • Testing & Commissioning"
+4. Background: Clean white or light blue gradient
+5. Include some electrical/engineering imagery (power lines, substations, etc.)
+
+This image will be shown when your website is shared on social media platforms like Facebook, LinkedIn, and Twitter.
+
+Recommended tools:
+- Canva
+- Figma
+- Adobe Photoshop
+- Online OG image generators
+
+Save as: /public/og-image.jpg
