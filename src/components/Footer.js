@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="lg:col-span-2">
               <div className="flex items-center mb-6">
                 <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-pink-500 rounded-lg flex items-center justify-center mr-3">
-                  <span className="text-white font-bold text-lg">BSE</span>
+                  <span className="text-white font-bold text-lg">BEL</span>
                 </div>
                 <span className="text-2xl font-bold">Blue Stud Engineering</span>
               </div>

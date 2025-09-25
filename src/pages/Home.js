@@ -18,7 +18,7 @@ const Home = () => {
             <div className="animate-fade-in-up">
               <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full text-orange-600 text-sm font-medium mb-8 animate-bounce-slow">
                 <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 animate-ping"></span>
-                Engineering Excellence Since 2015
+                NCA & EPRA Certified • Engineering Excellence Since 2015
               </div>
               <h1 className="text-6xl lg:text-8xl font-bold leading-tight mb-8 text-gray-900">
                 Blue Stud 
@@ -107,6 +107,66 @@ const Home = () => {
                 <div className="text-lg font-semibold text-gray-700 mb-2">Team Specialists</div>
                 <div className="text-sm text-gray-500">Expert Engineers</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="py-16 bg-gradient-to-r from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center px-6 py-3 bg-white border border-green-200 rounded-full text-green-600 font-medium mb-6 shadow-sm">
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              </svg>
+              Licensed & Certified
+            </div>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">Officially Licensed</span> Engineering Company
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Blue Stud Engineering Limited operates under full regulatory compliance with Kenya's engineering authorities
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* NCA Certification */}
+            <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-green-500">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">NCA Certified</h3>
+                  <p className="text-green-600 font-medium">National Construction Authority</p>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed">
+                Licensed by the National Construction Authority of Kenya for construction and engineering services, 
+                ensuring compliance with national building standards and regulations.
+              </p>
+            </div>
+
+            {/* EPRA Certification */}
+            <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-blue-500">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">EPRA Certified</h3>
+                  <p className="text-blue-600 font-medium">Energy & Petroleum Regulatory Authority</p>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed">
+                Authorized by the Energy and Petroleum Regulatory Authority for electrical installations, 
+                power systems design, and energy sector projects across Kenya.
+              </p>
             </div>
           </div>
         </div>
