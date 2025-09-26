@@ -11,20 +11,45 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-pink-500 rounded-lg flex items-center justify-center mr-3">
-                  <span className="text-white font-bold text-lg">BEL</span>
-                </div>
-                <span className="text-2xl font-bold">Blue Stud Engineering</span>
+                <img 
+                  src="/bel-logo.jpg" 
+                  alt="BEL Logo" 
+                  className="w-12 h-12 rounded-lg object-contain mr-4"
+                />
+                <span className="text-2xl font-bold text-blue-400">Blue Stud Engineering Limited</span>
               </div>
               <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-                Leading electrical engineering firm specializing in power systems design, 
-                substation construction, and comprehensive testing & commissioning services 
-                across Kenya and East Africa.
+                Leading Engineering, Procurement and Construction (EPC) company specializing in power systems design, 
+                substation construction, and comprehensive testing & commissioning services across Kenya and East Africa.
               </p>
+              
+              {/* Contact Information */}
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start space-x-3">
+                  <svg className="w-5 h-5 text-blue-400 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span className="text-gray-300">Kiambu Road, High View Plaza, Nairobi, Kenya</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                  <a href="tel:+254768967878" className="text-gray-300 hover:text-blue-400 transition-colors">+254 768 967 878</a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-gray-300">Monday to Friday: 8:00 AM - 4:30 PM</span>
+                </div>
+              </div>
+              
               <div className="flex space-x-4">
                 <a 
                   href="mailto:info@bluestudengineering.com" 
-                  className="text-gray-400 hover:text-orange-400 transition-colors duration-300"
+                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
                   aria-label="Email"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -32,8 +57,8 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a 
-                  href="tel:+254700000000" 
-                  className="text-gray-400 hover:text-orange-400 transition-colors duration-300"
+                  href="tel:+254768967878" 
+                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
                   aria-label="Phone"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -44,7 +69,7 @@ const Footer = () => {
                   href="https://linkedin.com/company/blue-stud-engineering" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-orange-400 transition-colors duration-300"
+                  className="text-gray-400 hover:text-blue-400 transition-colors duration-300"
                   aria-label="LinkedIn"
                 >
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -84,10 +109,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link 
-                    to="/victor-profile" 
+                    to="/engineers" 
                     className="text-gray-300 hover:text-white transition-colors duration-300"
                   >
-                    Leadership
+                    Our Engineers
                   </Link>
                 </li>
                 <li>

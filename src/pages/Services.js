@@ -274,6 +274,87 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Service 5: Power Systems Training */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center mb-6">
+                <span className="bg-green-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">05</span>
+                <h2 className="text-4xl font-bold text-gray-900">Power Systems Training</h2>
+              </div>
+              
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Comprehensive training programs for electrical engineering professionals, covering 
+                modern power systems, protection schemes, and emerging technologies in the electrical industry.
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Power systems fundamentals and advanced concepts</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Protection and automation systems training</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Renewable energy integration workshops</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Professional development and certification programs</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <svg className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">Hands-on practical sessions and simulations</span>
+                </div>
+              </div>
+              
+              <div className="mt-8 p-6 bg-green-50 rounded-lg">
+                <h4 className="font-bold text-green-900 mb-3">Training Highlights</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-green-800">
+                  <div>
+                    <p className="text-gray-700">• Expert instructors with 10+ years experience</p>
+                    <p className="text-gray-700">• Industry-recognized certifications</p>
+                    <p className="text-gray-700">• Customized corporate training programs</p>
+                  </div>
+                  <div>
+                    <p className="text-gray-700">• Modern training facilities and equipment</p>
+                    <p className="text-gray-700">• Continuing professional development (CPD) points</p>
+                    <p className="text-gray-700">• Post-training technical support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              {/* Placeholder for training photo */}
+              <div className="bg-gray-300 h-96 rounded-lg shadow-xl flex items-center justify-center">
+                <div className="text-center text-gray-600">
+                  <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                  <p className="text-lg font-semibold">Power Systems Training</p>
+                  <p className="text-sm">Professional development programs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="bg-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">

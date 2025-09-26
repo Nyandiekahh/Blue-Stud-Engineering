@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: 'Home', href: '/', current: location.pathname === '/' },
     { name: 'About', href: '/about', current: location.pathname === '/about' },
     { name: 'Services', href: '/services', current: location.pathname === '/services' },
-    { name: 'Victor Profile', href: '/victor-profile', current: location.pathname === '/victor-profile' },
+    { name: 'Our Engineers', href: '/engineers', current: location.pathname === '/engineers' },
     { name: 'Facility Management', href: '/facility-management', current: location.pathname === '/facility-management' },
     { name: 'Contact', href: '/contact', current: location.pathname === '/contact' },
   ];
@@ -21,10 +21,12 @@ const Navbar = () => {
           <div className="flex items-center">
             {/* Logo */}
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">BEL</span>
-              </div>
-              <span className="ml-3 text-white font-bold text-xl">Blue Stud Engineering</span>
+              <img 
+                src="/bel-logo.jpg" 
+                alt="BEL Logo" 
+                className="h-10 w-10 rounded-lg object-contain"
+              />
+              <span className="ml-3 text-blue-400 font-bold text-xl">Blue Stud Engineering Limited</span>
             </Link>
           </div>
 

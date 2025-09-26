@@ -179,16 +179,92 @@ const Contact = () => {
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-gray-700">Monday - Friday</span>
-                      <span className="text-gray-900 font-medium">8:00 AM - 6:00 PM</span>
+                      <span className="text-gray-900 font-medium">8:00 AM - 4:30 PM</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-700">Saturday</span>
-                      <span className="text-gray-900 font-medium">9:00 AM - 1:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-700">Sunday</span>
-                      <span className="text-gray-900 font-medium">Emergency Only</span>
-                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Contact QR Code */}
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-8">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Quick <span className="text-blue-600">Contact</span>
+            </h2>
+            <p className="text-xl text-gray-600">
+              Scan the QR code for instant access to our contact information
+            </p>
+          </div>
+          
+          <div className="relative inline-block">
+            {/* Animated Border */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 rounded-3xl blur opacity-30 group-hover:opacity-50 animate-pulse"></div>
+            
+            {/* QR Code Container */}
+            <div className="relative bg-white p-8 rounded-3xl shadow-2xl border-4 border-blue-100 hover:border-blue-300 transition-all duration-300 transform hover:scale-105">
+              {/* QR Code */}
+              <div className="relative">
+                <img 
+                  src="/logos/Contact.png" 
+                  alt="Blue Stud Engineering Contact QR Code" 
+                  className="w-64 h-64 sm:w-80 sm:h-80 mx-auto rounded-2xl shadow-lg"
+                  draggable="false"
+                  onContextMenu={(e) => e.preventDefault()}
+                  style={{ 
+                    userSelect: 'none',
+                    WebkitUserSelect: 'none',
+                    MozUserSelect: 'none',
+                    msUserSelect: 'none',
+                    WebkitUserDrag: 'none'
+                  }}
+                />
+                
+                {/* Scan Animation */}
+                <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-pulse"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-pulse animation-delay-500"></div>
+                  <div className="absolute top-0 bottom-0 left-0 w-1 bg-gradient-to-b from-transparent via-blue-500 to-transparent animate-pulse animation-delay-1000"></div>
+                  <div className="absolute top-0 bottom-0 right-0 w-1 bg-gradient-to-b from-transparent via-blue-500 to-transparent animate-pulse animation-delay-1500"></div>
+                </div>
+
+                {/* Corner Markers */}
+                <div className="absolute top-2 left-2 w-8 h-8 border-l-4 border-t-4 border-blue-600 rounded-tl-lg"></div>
+                <div className="absolute top-2 right-2 w-8 h-8 border-r-4 border-t-4 border-blue-600 rounded-tr-lg"></div>
+                <div className="absolute bottom-2 left-2 w-8 h-8 border-l-4 border-b-4 border-blue-600 rounded-bl-lg"></div>
+                <div className="absolute bottom-2 right-2 w-8 h-8 border-r-4 border-b-4 border-blue-600 rounded-br-lg"></div>
+              </div>
+              
+              {/* Instructions */}
+              <div className="mt-6 space-y-3">
+                <div className="flex items-center justify-center space-x-2">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                  <p className="text-lg font-semibold text-gray-900">Scan with your camera</p>
+                </div>
+                <p className="text-gray-600">
+                  Point your phone's camera at the QR code for instant contact access
+                </p>
+                
+                {/* Phone Icons */}
+                <div className="flex justify-center space-x-6 mt-6">
+                  <div className="flex items-center space-x-2 text-gray-500">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5z" clipRule="evenodd" />
+                      <path fillRule="evenodd" d="M7.414 15.414a2 2 0 01-2.828-2.828l3-3a2 2 0 012.828 0 1 1 0 001.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-sm">iOS Camera</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-gray-500">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-sm">Android</span>
                   </div>
                 </div>
               </div>

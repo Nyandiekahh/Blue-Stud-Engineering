@@ -52,6 +52,21 @@
   }
 }
 
+@keyframes zoom-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out;
 }
@@ -70,6 +85,10 @@
 
 .animate-scroll-left {
   animation: scroll-left 30s linear infinite;
+}
+
+.animate-zoom-in {
+  animation: zoom-in 3s ease-out forwards;
 }
 
 .animation-delay-100 {

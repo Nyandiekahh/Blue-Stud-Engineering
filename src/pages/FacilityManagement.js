@@ -7,14 +7,10 @@ const FacilityManagement = () => {
       <section className="bg-gradient-to-r from-green-900 via-blue-900 to-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-bold mb-6">Facility Management Objectives</h1>
-            <p className="text-xl text-blue-100 max-w-4xl mx-auto mb-4">
-              Focus on Key Components, Desired Approach and Practical Case Study
+            <h1 className="text-5xl font-bold mb-6">Facility Management Solutions</h1>
+            <p className="text-xl text-blue-100 max-w-4xl mx-auto">
+              Comprehensive facility management services focusing on key components, strategic approaches and proven methodologies for optimal infrastructure performance.
             </p>
-            <div className="text-sm text-blue-200">
-              <p>Prepared by: Victor Odhiambo Omondi</p>
-              <p>Date: Sunday 28 July, 2024</p>
-            </div>
           </div>
         </div>
       </section>
@@ -331,7 +327,7 @@ const FacilityManagement = () => {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-4">Need Expert Facility Management Solutions?</h2>
           <p className="text-xl text-blue-100 mb-8">
-            Contact Victor Odhiambo Omondi for comprehensive facility management consulting
+            Contact Blue Stud Engineering Limited for comprehensive facility management consulting and professional infrastructure services
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -341,10 +337,10 @@ const FacilityManagement = () => {
               Get Consultation
             </a>
             <a 
-              href="/victor-profile" 
+              href="/services" 
               className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200"
             >
-              View Victor's Profile
+              View Our Services
             </a>
           </div>
         </div>

@@ -13,26 +13,24 @@ const Home = () => {
           <div className="absolute -bottom-32 left-20 w-72 h-72 bg-gradient-to-r from-yellow-100 to-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-pulse animation-delay-4000"></div>
         </div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in-up">
               <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-orange-50 to-pink-50 border border-orange-200 rounded-full text-orange-600 text-sm font-medium mb-8 animate-bounce-slow">
                 <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 animate-ping"></span>
                 NCA & EPRA Certified • Engineering Excellence Since 2015
               </div>
-              <h1 className="text-6xl lg:text-8xl font-bold leading-tight mb-8 text-gray-900">
-                Blue Stud 
-                <span className="block bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
-                  Engineering
-                </span>
-                <span className="block text-4xl lg:text-5xl mt-4 text-gray-700 font-light">
+              <h1 className="text-6xl lg:text-8xl font-bold leading-tight mb-8">
+                <span className="text-blue-600">Blue Stud</span>
+                <span className="block text-blue-600">Engineering</span>
+                <span className="block text-4xl lg:text-5xl mt-4 text-blue-500 font-light">
                   Limited
                 </span>
               </h1>
               <p className="text-2xl text-gray-600 mb-12 leading-relaxed animate-fade-in-up animation-delay-300">
-                Pioneering the future of electrical power systems and renewable energy. From innovative concept design 
-                to seamless commissioning, we deliver world-class solutions in LV, MV, and HV systems with unmatched 
-                expertise and professional excellence.
+                A leading Engineering, Procurement and Construction (EPC) company specializing in electrical power systems 
+                and renewable energy. From innovative concept design to seamless commissioning, we deliver world-class 
+                solutions in LV, MV, and HV systems with unmatched expertise and professional excellence.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 animate-fade-in-up animation-delay-500">
                 <Link 
@@ -386,9 +384,9 @@ const Home = () => {
           <div className="text-center mb-20 animate-fade-in-up">
             <div className="inline-flex items-center px-6 py-3 bg-orange-50 border border-orange-200 rounded-full text-orange-600 font-medium mb-6 shadow-sm">
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 515.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
-              Trusted Partners
+              Trusted Customers
             </div>
             <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
               Our <span className="bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">Target Markets</span>
@@ -485,7 +483,7 @@ const Home = () => {
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
               </svg>
-              Trusted Partners
+              Trusted Customers
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
               Trusted by <span className="bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">Industry Leaders</span>
