@@ -10,7 +10,7 @@ const Services = () => {
             <div>
               <div className="flex items-center mb-6">
                 <span className="bg-blue-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">01</span>
-                <h2 className="text-4xl font-bold text-gray-900">Power Systems Design</h2>
+                <h2 className="text-4xl font-bold text-blue-900">Power Systems Design</h2>
               </div>
               
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -70,7 +70,7 @@ const Services = () => {
             <div className="lg:order-2">
               <div className="flex items-center mb-6">
                 <span className="bg-blue-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">02</span>
-                <h2 className="text-4xl font-bold text-gray-900">Installation & Construction</h2>
+                <h2 className="text-4xl font-bold text-blue-900">Installation & Construction</h2>
               </div>
               
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -128,7 +128,7 @@ const Services = () => {
             <div>
               <div className="flex items-center mb-6">
                 <span className="bg-blue-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">03</span>
-                <h2 className="text-4xl font-bold text-gray-900">Testing & Commissioning Services</h2>
+                <h2 className="text-4xl font-bold text-blue-900">Testing & Commissioning Services</h2>
               </div>
               
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -197,7 +197,7 @@ const Services = () => {
             <div className="lg:order-2">
               <div className="flex items-center mb-6">
                 <span className="bg-blue-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">04</span>
-                <h2 className="text-4xl font-bold text-gray-900">Maintenance, Rehabilitation & Repair</h2>
+                <h2 className="text-4xl font-bold text-blue-900">Maintenance, Rehabilitation & Repair</h2>
               </div>
               
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">

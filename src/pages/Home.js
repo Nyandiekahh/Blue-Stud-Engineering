@@ -31,10 +31,10 @@ const Home = () => {
                   />
                 </div>
                 <div>
-                  <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                    <span className="text-blue-600">Blue Stud</span>
-                    <span className="block text-blue-600">Engineering</span>
-                    <span className="block text-4xl lg:text-6xl mt-2 text-blue-600 font-bold">
+                  <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-blue-600">
+                    Blue Stud
+                    <span className="block">Engineering</span>
+                    <span className="block text-4xl lg:text-6xl mt-2 font-bold">
                       Limited
                     </span>
                   </h1>
@@ -133,8 +133,8 @@ const Home = () => {
               </svg>
               Licensed & Certified
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              <span className="text-blue-600">Officially Licensed</span> Engineering Company
+            <h2 className="text-4xl font-bold text-blue-900 mb-4">
+              Officially Licensed Engineering Company
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Blue Stud Engineering Limited operates under full regulatory compliance with Kenya's engineering authorities
@@ -194,9 +194,8 @@ const Home = () => {
                 </svg>
                 About Our Company
               </div>
-              <h2 className="text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                Excellence in Electrical 
-                <span className="text-blue-600"> Engineering</span>
+              <h2 className="text-5xl font-bold text-blue-900 mb-8 leading-tight">
+                Excellence in Electrical Engineering
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Blue Stud Engineering Limited specializes in electrical power systems and renewables with extensive 
@@ -285,8 +284,8 @@ const Home = () => {
               </svg>
               Engineering Excellence
             </div>
-            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-              Our Core <span className="text-blue-600">Services</span>
+            <h2 className="text-5xl lg:text-6xl font-bold text-blue-900 mb-8 leading-tight">
+              Our Core Services
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Comprehensive electrical engineering solutions from innovative design concepts to seamless commissioning and beyond
@@ -401,8 +400,8 @@ const Home = () => {
               </svg>
               Trusted Customers
             </div>
-            <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
-              Our <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">Target Markets</span>
+            <h2 className="text-5xl lg:text-6xl font-bold text-blue-900 mb-8 leading-tight">
+              Our Target Markets
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Empowering utilities, transmission operators, and commercial infrastructure with innovative engineering solutions across multiple sectors
@@ -419,7 +418,7 @@ const Home = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
                   </div>
-                  <h3 className="text-3xl font-bold text-gray-900 leading-tight">
+                  <h3 className="text-3xl font-bold text-blue-900 leading-tight">
                     Utilities & Transmission Operators
                   </h3>
                 </div>
@@ -453,7 +452,7 @@ const Home = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                   </div>
-                  <h3 className="text-3xl font-bold text-gray-900 leading-tight">
+                  <h3 className="text-3xl font-bold text-blue-900 leading-tight">
                     Commercial Infrastructure
                   </h3>
                 </div>
@@ -498,8 +497,8 @@ const Home = () => {
               </svg>
               Trusted Customers
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Trusted by <span className="bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">Industry Leaders</span>
+            <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-6 leading-tight">
+              Trusted by Industry Leaders
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Proud to power Kenya's most innovative companies with world-class electrical engineering solutions
@@ -680,11 +679,9 @@ const Home = () => {
               Ready to Innovate?
             </div>
             
-            <h2 className="text-5xl lg:text-7xl font-bold mb-8 text-gray-900 leading-tight">
+            <h2 className="text-5xl lg:text-7xl font-bold mb-8 text-blue-900 leading-tight">
               Ready to Start Your 
-              <span className="block bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
-                Next Project?
-              </span>
+              Next Project?
             </h2>
             
             <p className="text-2xl lg:text-3xl text-gray-600 mb-16 max-w-5xl mx-auto leading-relaxed">

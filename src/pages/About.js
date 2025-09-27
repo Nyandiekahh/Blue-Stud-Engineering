@@ -8,7 +8,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Company Overview</h2>
+              <h2 className="text-4xl font-bold text-blue-900 mb-6">Company Overview</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Blue Stud Engineering Limited specializes in electrical power systems and renewables 
                 with extensive experience in LV (Low Voltage), MV (Medium Voltage), and HV (High Voltage) 
@@ -83,7 +83,7 @@ const About = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Expertise</h2>
+            <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Expertise</h2>
             <p className="text-xl text-gray-600">Highly skilled engineers with vast experience</p>
           </div>
           
@@ -102,7 +102,7 @@ const About = () => {
             </div>
             
             <div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">Professional Engineering Team</h3>
+              <h3 className="text-3xl font-bold text-blue-900 mb-6">Professional Engineering Team</h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">

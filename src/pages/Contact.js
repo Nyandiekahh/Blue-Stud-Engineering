@@ -9,7 +9,7 @@ const Contact = () => {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">Contact Us</h1>
+            <h1 className="text-5xl font-bold text-blue-900 mb-6">Contact Us</h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               Get in touch with our expert engineering team for professional electrical power systems solutions.
             </p>
@@ -17,7 +17,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Get Free Consultation</h2>
+              <h2 className="text-3xl font-bold text-blue-900 mb-6">Get Free Consultation</h2>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
@@ -122,7 +122,7 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
+              <h2 className="text-3xl font-bold text-blue-900 mb-6">Contact Information</h2>
               
               <div className="space-y-8">
                 <div className="bg-gray-50 p-6 rounded-lg">
@@ -189,8 +189,8 @@ const Contact = () => {
       <section className="py-16 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Quick <span className="text-blue-600">Contact</span>
+            <h2 className="text-4xl font-bold text-blue-900 mb-4">
+              Quick Contact
             </h2>
             <p className="text-xl text-gray-600">
               Scan the QR code for instant access to our contact information
@@ -273,7 +273,7 @@ const Contact = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Blue Stud Engineering?</h2>
+            <h2 className="text-4xl font-bold text-blue-900 mb-4">Why Choose Blue Stud Engineering?</h2>
             <p className="text-xl text-gray-600">Professional excellence in electrical engineering solutions</p>
           </div>
           

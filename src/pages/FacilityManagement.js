@@ -303,7 +303,7 @@ const FacilityManagement = () => {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <p className="text-gray-700">
                 <span className="font-semibold">1. World Health Organization.</span> Modernizing the WHO Headquarters in Geneva. 2016. 
-                Available at: <span className="text-blue-600">Modernizing WHO Headquarters</span>
+                Available at: Modernizing WHO Headquarters
               </p>
             </div>
             
@@ -311,7 +311,7 @@ const FacilityManagement = () => {
               <p className="text-gray-700">
                 <span className="font-semibold">2. United Nations Environment Programme.</span> (2023). Greening the Blue Report 2023: 
                 The UN System's Environmental Footprint and Efforts to Reduce it. Geneva. 
-                Available at: <span className="text-blue-600">Greening the Blue</span>
+                Available at: Greening the Blue
               </p>
             </div>
           </div>

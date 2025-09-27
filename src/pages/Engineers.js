@@ -4,31 +4,7 @@ import { Link } from 'react-router-dom';
 const Engineers = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-white py-12 overflow-hidden">
-        {/* Engineering Background Elements */}
-        <div className="absolute inset-0 opacity-[0.02] pointer-events-none">
-          <div className="absolute top-5 left-8 text-6xl font-light text-gray-400 rotate-12">V = IR</div>
-          <div className="absolute top-20 right-20 text-4xl font-light text-gray-300">P = V²/R</div>
-          <div className="absolute top-40 left-1/4 text-3xl font-light text-gray-400 -rotate-6">∮ E·dl = -dΦ/dt</div>
-          <div className="absolute top-60 right-1/3 text-5xl font-light text-gray-300">⚡</div>
-          <div className="absolute bottom-40 left-20 text-4xl font-light text-gray-400 rotate-6">Z = R + jX</div>
-          <div className="absolute bottom-20 right-10 text-3xl font-light text-gray-300">kVA = √3 × V × I</div>
-          <div className="absolute top-32 right-1/4 text-6xl font-light text-gray-400">⚙️</div>
-          <div className="absolute bottom-60 left-1/3 text-4xl font-light text-gray-300 -rotate-12">cosφ</div>
-          <div className="absolute top-16 left-1/2 text-3xl font-light text-gray-400">f = 1/2π√LC</div>
-          <div className="absolute bottom-32 right-1/4 text-5xl font-light text-gray-300 rotate-45">🔧</div>
-          <div className="absolute top-12 left-1/3 text-2xl font-light text-gray-400 rotate-6">μ₀ = 4π×10⁻⁷</div>
-          <div className="absolute top-52 left-16 text-3xl font-light text-gray-300 -rotate-12">ε = Q/4πε₀r²</div>
-          <div className="absolute bottom-48 right-1/3 text-2xl font-light text-gray-400 rotate-12">B = μ₀H</div>
-          <div className="absolute top-72 right-12 text-4xl font-light text-gray-300">∫∫∫</div>
-          <div className="absolute bottom-12 left-1/4 text-2xl font-light text-gray-400 -rotate-6">Φ = BA</div>
-          <div className="absolute top-28 left-12 text-3xl font-light text-gray-300 rotate-45">∇×E</div>
-          <div className="absolute bottom-56 right-20 text-2xl font-light text-gray-400">τ = RC</div>
-          <div className="absolute top-48 right-1/2 text-3xl font-light text-gray-300 -rotate-45">⟲</div>
-        </div>
-        
-      </section>
+
 
       {/* Team Expertise Section */}
       <section className="relative py-12 bg-gray-50 overflow-hidden">
@@ -58,8 +34,8 @@ const Engineers = () => {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              <span className="text-blue-600">10+ Years</span> of Engineering Excellence
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">
+              10+ Years of Engineering Excellence
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our team of certified engineers brings decades of experience in delivering world-class 
@@ -154,8 +130,8 @@ const Engineers = () => {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Professional <span className="text-blue-600">Certifications</span>
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">
+              Professional Certifications
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our engineers hold industry-recognized certifications and maintain continuous professional development
@@ -206,7 +182,7 @@ const Engineers = () => {
                 </svg>
               </div>
               
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
                 Ready to Work with Expert Engineers?
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
