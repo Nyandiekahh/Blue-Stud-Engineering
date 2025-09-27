@@ -3,21 +3,17 @@ import React from 'react';
 const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 to-gray-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl text-blue-100 max-w-4xl mx-auto">
-              Get in touch with our expert engineering team for your next electrical power systems project
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       {/* Contact Form and Info */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h1 className="text-5xl font-bold text-gray-900 mb-6">Contact Us</h1>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Get in touch with our expert engineering team for professional electrical power systems solutions.
+            </p>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
@@ -174,8 +170,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="bg-green-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold text-green-900 mb-4">Business Hours</h3>
+                <div className="bg-blue-50 p-6 rounded-lg">
+                  <h3 className="text-xl font-semibold text-blue-900 mb-4">Business Hours</h3>
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-gray-700">Monday - Friday</span>
@@ -203,7 +199,7 @@ const Contact = () => {
           
           <div className="relative inline-block">
             {/* Animated Border */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-purple-500 to-blue-600 rounded-3xl blur opacity-30 group-hover:opacity-50 animate-pulse"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 rounded-3xl blur opacity-30 group-hover:opacity-50 animate-pulse"></div>
             
             {/* QR Code Container */}
             <div className="relative bg-white p-8 rounded-3xl shadow-2xl border-4 border-blue-100 hover:border-blue-300 transition-all duration-300 transform hover:scale-105">

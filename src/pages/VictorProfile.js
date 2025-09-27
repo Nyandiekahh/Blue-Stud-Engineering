@@ -15,7 +15,7 @@ const VictorProfile = () => {
             <h1 className="text-5xl font-bold mb-4">Victor Odhiambo Omondi</h1>
             <h2 className="text-2xl text-blue-100 mb-6">Electrical Engineer</h2>
             <p className="text-xl text-blue-100 max-w-4xl mx-auto">
-              Results-oriented Electrical Engineer with over nine years of experience in design, supervision, 
+              Results-oriented Electrical Engineer with over ten years of experience in design, supervision, 
               installation, testing, troubleshooting, and commissioning medium to high-voltage power generating 
               and distribution systems.
             </p>
@@ -71,7 +71,7 @@ const VictorProfile = () => {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Professional Profile</h2>
               <div className="bg-blue-50 p-6 rounded-lg">
                 <p className="text-gray-700 leading-relaxed">
-                  Results-oriented Electrical Engineer with over nine years of experience in design, supervision, 
+                  Results-oriented Electrical Engineer with over ten years of experience in design, supervision, 
                   installation, testing, troubleshooting, and commissioning medium to high-voltage power generating 
                   and distribution systems. Skilled in facilities management, people management, and project management. 
                   Seeking a challenging environment to leverage expertise in leadership, people management and mentorship, 

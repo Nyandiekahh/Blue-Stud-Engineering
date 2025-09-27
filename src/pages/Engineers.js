@@ -28,24 +28,6 @@ const Engineers = () => {
           <div className="absolute top-48 right-1/2 text-3xl font-light text-gray-300 -rotate-45">⟲</div>
         </div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="inline-flex items-center px-6 py-3 bg-white border border-blue-200 rounded-full text-blue-600 font-medium mb-6 shadow-sm">
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m3 5.197H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              Expert Engineering Team
-            </div>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              <span className="text-blue-600">Our Expert</span>
-              <span className="block text-gray-900">Engineering Team</span>
-            </h1>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Meet our highly skilled engineering professionals with over 10+ years of combined experience 
-              in electrical power systems, renewable energy, and industrial automation solutions.
-            </p>
-          </div>
-        </div>
       </section>
 
       {/* Team Expertise Section */}
@@ -93,42 +75,42 @@ const Engineers = () => {
                 experience: "10+ Years Experience",
                 description: "Expert design and implementation of LV, MV, and HV power distribution systems with advanced protection schemes.",
                 icon: "⚡",
-                color: "from-blue-500 to-indigo-500"
+                color: "from-blue-500 to-blue-600"
               },
               {
                 title: "Substation Design & Construction",
                 experience: "Proven Track Record",
                 description: "Comprehensive substation engineering from concept design through commissioning and maintenance.",
                 icon: "🏗️",
-                color: "from-green-500 to-emerald-500"
+                color: "from-blue-600 to-blue-700"
               },
               {
                 title: "Testing & Commissioning",
                 experience: "Certified Specialists",
                 description: "Professional testing and commissioning services ensuring optimal system performance and safety.",
                 icon: "🔧",
-                color: "from-orange-500 to-red-500"
+                color: "from-blue-400 to-blue-500"
               },
               {
                 title: "Renewable Energy Systems",
                 experience: "Future-Ready Solutions",
                 description: "Integration of solar, wind, and hybrid renewable energy systems with grid infrastructure.",
                 icon: "🌞",
-                color: "from-yellow-500 to-orange-500"
+                color: "from-blue-500 to-blue-600"
               },
               {
                 title: "Industrial Automation",
                 experience: "Advanced Technology",
                 description: "SCADA systems, PLC programming, and industrial control solutions for enhanced efficiency.",
                 icon: "🤖",
-                color: "from-purple-500 to-pink-500"
+                color: "from-blue-600 to-blue-700"
               },
               {
                 title: "Project Management",
                 experience: "End-to-End Delivery",
                 description: "Professional project management ensuring on-time, on-budget delivery of complex engineering projects.",
                 icon: "📊",
-                color: "from-indigo-500 to-blue-500"
+                color: "from-blue-400 to-blue-500"
               }
             ].map((expertise, index) => (
               <div key={index} className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
@@ -214,52 +196,83 @@ const Engineers = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="relative py-12 bg-gradient-to-r from-blue-600 to-indigo-700 overflow-hidden">
-        {/* Power Grid Background */}
-        <div className="absolute inset-0 opacity-[0.008] pointer-events-none text-white">
-          <div className="absolute top-8 left-8 text-7xl font-light rotate-12">⚡</div>
-          <div className="absolute top-16 right-16 text-4xl font-light">P = 3VIcosφ</div>
-          <div className="absolute top-32 left-1/4 text-5xl font-light -rotate-6">kV</div>
-          <div className="absolute top-48 right-1/3 text-6xl font-light rotate-45">⟲</div>
-          <div className="absolute bottom-32 left-16 text-4xl font-light">I²R</div>
-          <div className="absolute bottom-16 right-20 text-5xl font-light -rotate-12">MVA</div>
-          <div className="absolute top-24 right-1/2 text-3xl font-light rotate-6">H = LI²/2</div>
-          <div className="absolute bottom-40 left-1/3 text-7xl font-light">∿</div>
-          <div className="absolute top-64 left-1/2 text-4xl font-light rotate-12">|Z|</div>
-          <div className="absolute bottom-24 right-1/4 text-6xl font-light">⚙️</div>
-          <div className="absolute top-4 left-12 text-2xl font-light -rotate-15">∇²V = 0</div>
-          <div className="absolute top-20 left-1/3 text-3xl font-light rotate-30">∮E·dA</div>
-          <div className="absolute bottom-8 right-12 text-2xl font-light">GW</div>
-          <div className="absolute top-52 left-8 text-3xl font-light -rotate-45">⊗</div>
-          <div className="absolute bottom-48 right-1/3 text-2xl font-light rotate-60">∂H/∂t</div>
-          <div className="absolute top-12 right-1/4 text-4xl font-light">∞</div>
-          <div className="absolute bottom-4 left-1/4 text-3xl font-light -rotate-30">≈</div>
-          <div className="absolute top-40 right-8 text-2xl font-light rotate-45">Φₘ</div>
-          <div className="absolute bottom-56 left-1/2 text-3xl font-light">∠θ</div>
-          <div className="absolute top-28 left-20 text-2xl font-light -rotate-60">μᵣ</div>
-        </div>
-        
-        <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Ready to Work with Expert Engineers?
-          </h2>
-          <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-            Partner with our experienced engineering team for your next electrical infrastructure project. 
-            From concept to commissioning, we deliver excellence.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link 
-              to="/contact" 
-              className="bg-white text-blue-600 hover:bg-blue-50 px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105"
-            >
-              Start Your Project
-            </Link>
-            <Link 
-              to="/services" 
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105"
-            >
-              View Our Services
-            </Link>
+      <section className="bg-gradient-to-r from-gray-50 to-blue-50 py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+            <div className="text-center max-w-4xl mx-auto">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v2c0 .656.126 1.283.356 1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Ready to Work with Expert Engineers?
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                Partner with our experienced engineering team for your next electrical infrastructure project. 
+                From concept to commissioning, we deliver excellence every step of the way.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link 
+                  to="/contact" 
+                  className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
+                  <span className="flex items-center">
+                    Start Your Project
+                    <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </span>
+                </Link>
+                <Link 
+                  to="/services" 
+                  className="group border-2 border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200"
+                >
+                  <span className="flex items-center">
+                    View Our Services
+                    <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                </Link>
+              </div>
+              
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  <div className="flex flex-col items-center">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Certified Team</h4>
+                    <p className="text-sm text-gray-600">EBK & IEK registered professional engineers</p>
+                  </div>
+                  
+                  <div className="flex flex-col items-center">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                      </svg>
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Proven Excellence</h4>
+                    <p className="text-sm text-gray-600">Decade of successful project delivery</p>
+                  </div>
+                  
+                  <div className="flex flex-col items-center">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Complete Solutions</h4>
+                    <p className="text-sm text-gray-600">End-to-end engineering project delivery</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

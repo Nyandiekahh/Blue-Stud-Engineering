@@ -32,14 +32,16 @@ function App() {
         <Router>
           <div className="min-h-screen bg-gray-50">
             <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/engineers" element={<Engineers />} />
-              <Route path="/facility-management" element={<FacilityManagement />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
+            <div className="pt-16">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/engineers" element={<Engineers />} />
+                <Route path="/facility-management" element={<FacilityManagement />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </div>
             <Footer />
           </div>
         </Router>
