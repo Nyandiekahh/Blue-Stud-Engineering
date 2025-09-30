@@ -24,8 +24,8 @@ const Home = () => {
               {/* Company Title - Centered and Large - Smooth Mobile Responsive */}
               <div className="text-center mb-8 animate-fade-in-up">
                 <h1 className="text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-bold leading-tight text-blue-900">
-                  <span className="block whitespace-nowrap">Blue Stud Engineering</span>
-                  <span className="block text-4xl md:text-6xl lg:text-8xl xl:text-9xl mt-2 font-bold whitespace-nowrap text-center lg:text-left lg:ml-[25rem]">
+                  <span className="block whitespace-nowrap text-blue-900">Blue Stud Engineering</span>
+                  <span className="block text-4xl md:text-6xl lg:text-8xl xl:text-9xl mt-2 font-bold whitespace-nowrap text-center lg:text-left lg:ml-[25rem] text-blue-900">
                     Limited
                   </span>
                 </h1>

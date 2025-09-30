@@ -52,7 +52,7 @@ const Navbar = () => {
                 alt="BEL Logo" 
                 className="h-10 w-10 rounded-lg object-contain"
               />
-              <span className="ml-3 text-blue-600 font-bold text-xl">Blue Stud Engineering Limited</span>
+              <span className="ml-3 text-blue-900 font-bold text-xl">Blue Stud Engineering Limited</span>
             </Link>
           </div>
 
