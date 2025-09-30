@@ -30,19 +30,19 @@ const FacilityManagement = () => {
                   <h3 className="text-2xl font-semibold text-blue-900 mb-3">Objectives</h3>
                   <div className="space-y-2">
                     <div className="flex items-start space-x-3">
-                      <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-gray-700">Ensure reliability, efficiency and safety compliance of work spaces and buildings</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-gray-700">Reduce downtime and operational costs</span>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       <span className="text-gray-700">Provide convenient environment that motivates staff productivity</span>
@@ -78,7 +78,7 @@ const FacilityManagement = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Component 1: Building Operations */}
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-lg">1</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Building Operations</h3>
@@ -98,7 +98,7 @@ const FacilityManagement = () => {
 
             {/* Component 2: Green Environment */}
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-lg">2</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Green Environment & Energy Saving</h3>
@@ -118,7 +118,7 @@ const FacilityManagement = () => {
 
             {/* Component 3: Country Offices Support */}
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-blue-800 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-lg">3</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Country Offices Support</h3>
@@ -138,7 +138,7 @@ const FacilityManagement = () => {
 
             {/* Component 4: Premises Reliability */}
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-lg">4</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Premises Reliability</h3>
@@ -158,7 +158,7 @@ const FacilityManagement = () => {
 
             {/* Component 5: Premises Security */}
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-lg">5</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Premises Security</h3>
@@ -178,7 +178,7 @@ const FacilityManagement = () => {
 
             {/* Component 6: Enabling Work Environment */}
             <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-blue-800 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-lg">6</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Enabling Work Environment</h3>
@@ -219,31 +219,31 @@ const FacilityManagement = () => {
                 <h4 className="text-xl font-semibold text-blue-900 mb-4">Best Practices Implemented:</h4>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">Fire and safety improvements</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">Increased security</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">Improved air quality</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">Considerations for persons with disabilities</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">Efficient spaces to support evolving work demands</span>
@@ -259,7 +259,7 @@ const FacilityManagement = () => {
                 <div className="space-y-6">
                   <div className="bg-white p-6 rounded-lg shadow-sm">
                     <div className="flex items-center space-x-3 mb-2">
-                      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-8 h-8 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       <h4 className="text-lg font-semibold text-gray-900">Increased savings in utilities</h4>
@@ -269,7 +269,7 @@ const FacilityManagement = () => {
                   
                   <div className="bg-white p-6 rounded-lg shadow-sm">
                     <div className="flex items-center space-x-3 mb-2">
-                      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-8 h-8 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                       </svg>
                       <h4 className="text-lg font-semibold text-gray-900">Reduced operational costs</h4>
@@ -279,7 +279,7 @@ const FacilityManagement = () => {
                   
                   <div className="bg-white p-6 rounded-lg shadow-sm">
                     <div className="flex items-center space-x-3 mb-2">
-                      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-8 h-8 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
@@ -324,7 +324,7 @@ const FacilityManagement = () => {
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
@@ -340,7 +340,7 @@ const FacilityManagement = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a 
                   href="/contact" 
-                  className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="group bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <span className="flex items-center">
                     Get Consultation
@@ -351,7 +351,7 @@ const FacilityManagement = () => {
                 </a>
                 <a 
                   href="/services" 
-                  className="group border-2 border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200"
+                  className="group border-2 border-gray-300 text-gray-700 hover:border-blue-900 hover:text-blue-900 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200"
                 >
                   <span className="flex items-center">
                     View Our Services
@@ -366,7 +366,7 @@ const FacilityManagement = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                   <div className="flex flex-col items-center">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
@@ -376,7 +376,7 @@ const FacilityManagement = () => {
                   
                   <div className="flex flex-col items-center">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
@@ -386,7 +386,7 @@ const FacilityManagement = () => {
                   
                   <div className="flex flex-col items-center">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>

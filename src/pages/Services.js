@@ -205,37 +205,19 @@ const Services = () => {
             </div>
             
             <div>
-              {/* Testing & Commissioning Services Photo Gallery */}
-              <div className="space-y-6">
-                <div className="relative group">
-                  <div className="absolute -inset-2 bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
-                  <div className="relative">
-                    <img 
-                      src="/images/services/testing-commissioning-services-1.jpg" 
-                      alt="Testing & Commissioning Services - Professional testing and commissioning by certified engineers"
-                      className="w-full h-64 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="text-lg font-semibold mb-1">Testing & Commissioning</p>
-                      <p className="text-sm opacity-90">Professional testing procedures</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="relative group">
-                  <div className="absolute -inset-2 bg-gradient-to-r from-blue-100 to-green-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
-                  <div className="relative">
-                    <img 
-                      src="/images/services/testing-commissioning-services-2.jpg" 
-                      alt="Testing & Commissioning Services - Advanced equipment testing and system validation"
-                      className="w-full h-64 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="text-lg font-semibold mb-1">System Validation</p>
-                      <p className="text-sm opacity-90">Advanced equipment testing</p>
-                    </div>
+              {/* Testing & Commissioning Services Photo */}
+              <div className="relative group">
+                <div className="absolute -inset-2 bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                <div className="relative">
+                  <img 
+                    src="/images/services/testing-commissioning-services-1.jpg" 
+                    alt="Testing & Commissioning Services - Professional testing and commissioning by certified engineers"
+                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-lg font-semibold mb-1">Testing & Commissioning</p>
+                    <p className="text-sm opacity-90">Professional testing and commissioning</p>
                   </div>
                 </div>
               </div>
@@ -433,7 +415,7 @@ const Services = () => {
                   className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <span className="flex items-center">
-                    Make Enquiries
+                    Get Free Consultation
                     <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>

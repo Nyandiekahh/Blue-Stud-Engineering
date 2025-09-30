@@ -93,7 +93,7 @@ Thank you!`;
                       value={formData.firstName}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-900 focus:border-blue-900"
                     />
                   </div>
                   <div>
@@ -107,7 +107,7 @@ Thank you!`;
                       value={formData.lastName}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-900 focus:border-blue-900"
                     />
                   </div>
                 </div>
@@ -123,7 +123,7 @@ Thank you!`;
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-900 focus:border-blue-900"
                   />
                 </div>
 
@@ -138,7 +138,7 @@ Thank you!`;
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-900 focus:border-blue-900"
                   />
                 </div>
 
@@ -152,7 +152,7 @@ Thank you!`;
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-900 focus:border-blue-900"
                   />
                 </div>
 
@@ -165,7 +165,7 @@ Thank you!`;
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-900 focus:border-blue-900"
                   >
                     <option value="">Select a service</option>
                     <option value="power-systems-design">Power Systems Design</option>
@@ -186,7 +186,7 @@ Thank you!`;
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-900 focus:border-blue-900"
                     placeholder="Please provide details about your project requirements..."
                   ></textarea>
                 </div>
@@ -227,7 +227,7 @@ Thank you!`;
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Blue Stud Engineering Limited</h3>
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3">
-                      <svg className="w-6 h-6 text-blue-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-blue-900 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
@@ -238,17 +238,17 @@ Thank you!`;
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <svg className="w-6 h-6 text-blue-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-blue-900 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                       <div>
                         <p className="font-medium text-gray-900">Phone & WhatsApp</p>
-                        <a href="tel:+254768967878" className="text-blue-600 hover:text-blue-800 transition-colors">+254 768 967 878</a>
+                        <a href="tel:+254768967878" className="text-blue-900 hover:text-blue-800 transition-colors">+254 768 967 878</a>
                       </div>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <svg className="w-6 h-6 text-blue-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-blue-900 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                       <div>
@@ -297,7 +297,7 @@ Thank you!`;
           
           <div className="relative inline-block">
             {/* Animated Border */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 rounded-3xl blur opacity-30 group-hover:opacity-50 animate-pulse"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-800 via-blue-900 to-blue-900 rounded-3xl blur opacity-30 group-hover:opacity-50 animate-pulse"></div>
             
             {/* QR Code Container */}
             <div className="relative bg-white p-8 rounded-3xl shadow-2xl border-4 border-blue-100 hover:border-blue-300 transition-all duration-300 transform hover:scale-105">
@@ -320,23 +320,23 @@ Thank you!`;
                 
                 {/* Scan Animation */}
                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-pulse"></div>
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-pulse animation-delay-500"></div>
-                  <div className="absolute top-0 bottom-0 left-0 w-1 bg-gradient-to-b from-transparent via-blue-500 to-transparent animate-pulse animation-delay-1000"></div>
-                  <div className="absolute top-0 bottom-0 right-0 w-1 bg-gradient-to-b from-transparent via-blue-500 to-transparent animate-pulse animation-delay-1500"></div>
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-900 to-transparent animate-pulse"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-900 to-transparent animate-pulse animation-delay-500"></div>
+                  <div className="absolute top-0 bottom-0 left-0 w-1 bg-gradient-to-b from-transparent via-blue-900 to-transparent animate-pulse animation-delay-1000"></div>
+                  <div className="absolute top-0 bottom-0 right-0 w-1 bg-gradient-to-b from-transparent via-blue-900 to-transparent animate-pulse animation-delay-1500"></div>
                 </div>
 
                 {/* Corner Markers */}
-                <div className="absolute top-2 left-2 w-8 h-8 border-l-4 border-t-4 border-blue-600 rounded-tl-lg"></div>
-                <div className="absolute top-2 right-2 w-8 h-8 border-r-4 border-t-4 border-blue-600 rounded-tr-lg"></div>
-                <div className="absolute bottom-2 left-2 w-8 h-8 border-l-4 border-b-4 border-blue-600 rounded-bl-lg"></div>
-                <div className="absolute bottom-2 right-2 w-8 h-8 border-r-4 border-b-4 border-blue-600 rounded-br-lg"></div>
+                <div className="absolute top-2 left-2 w-8 h-8 border-l-4 border-t-4 border-blue-900 rounded-tl-lg"></div>
+                <div className="absolute top-2 right-2 w-8 h-8 border-r-4 border-t-4 border-blue-900 rounded-tr-lg"></div>
+                <div className="absolute bottom-2 left-2 w-8 h-8 border-l-4 border-b-4 border-blue-900 rounded-bl-lg"></div>
+                <div className="absolute bottom-2 right-2 w-8 h-8 border-r-4 border-b-4 border-blue-900 rounded-br-lg"></div>
               </div>
               
               {/* Instructions */}
               <div className="mt-6 space-y-3">
                 <div className="flex items-center justify-center space-x-2">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                   <p className="text-lg font-semibold text-gray-900">Scan with your camera</p>
@@ -377,7 +377,7 @@ Thank you!`;
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
@@ -387,7 +387,7 @@ Thank you!`;
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
@@ -397,7 +397,7 @@ Thank you!`;
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -407,7 +407,7 @@ Thank you!`;
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>

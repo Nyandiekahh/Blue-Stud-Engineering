@@ -300,7 +300,7 @@ Could you please be more specific about what you'd like to know? Or contact us d
       {/* Chat Icon */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-20 right-4 z-40 bg-blue-600 hover:bg-blue-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200"
+        className="fixed bottom-20 right-4 z-40 bg-blue-900 hover:bg-blue-800 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-200"
         title="Chat with Blue Stud Engineering AI Assistant"
       >
         {isOpen ? (
@@ -318,9 +318,9 @@ Could you please be more specific about what you'd like to know? Or contact us d
       {isOpen && (
         <div className="fixed bottom-36 right-4 z-40 w-80 sm:w-96 h-96 bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col">
           {/* Header */}
-          <div className="bg-blue-600 text-white p-4 rounded-t-lg flex items-center justify-between">
+          <div className="bg-blue-900 text-white p-4 rounded-t-lg flex items-center justify-between">
             <div className="flex items-center">
-              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+              <div className="w-8 h-8 bg-blue-900 rounded-full flex items-center justify-center mr-3">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd" />
                 </svg>
@@ -346,7 +346,7 @@ Could you please be more specific about what you'd like to know? Or contact us d
               <div key={index} className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-xs px-3 py-2 rounded-lg text-sm ${
                   message.type === 'user' 
-                    ? 'bg-blue-600 text-white' 
+                    ? 'bg-blue-900 text-white' 
                     : 'bg-gray-100 text-gray-800'
                 }`}>
                   <div className="whitespace-pre-line">{message.content}</div>
@@ -377,7 +377,7 @@ Could you please be more specific about what you'd like to know? Or contact us d
                       setInputMessage(question);
                       setTimeout(handleSendMessage, 100);
                     }}
-                    className="w-full text-left text-xs bg-blue-50 hover:bg-blue-100 text-blue-700 px-2 py-1 rounded border transition-colors"
+                    className="w-full text-left text-xs bg-blue-50 hover:bg-blue-100 text-blue-800 px-2 py-1 rounded border transition-colors"
                   >
                     {question}
                   </button>
@@ -397,11 +397,11 @@ Could you please be more specific about what you'd like to know? Or contact us d
                 onChange={(e) => setInputMessage(e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Ask about our services..."
-                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent"
               />
               <button
                 onClick={handleSendMessage}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+                className="bg-blue-900 hover:bg-blue-800 text-white px-4 py-2 rounded-lg transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
