@@ -62,18 +62,22 @@ const Home = () => {
               </div>
             </div>
             <div className="lg:text-right animate-fade-in-up animation-delay-700">
-              {/* Clean Substation Photo Placeholder */}
+              {/* Smart Electrical Infrastructure Photo */}
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
-                <div className="relative bg-white border-2 border-blue-100 group-hover:border-blue-300 h-96 rounded-2xl shadow-xl flex items-center justify-center transition-all duration-300">
-                  <div className="text-center text-gray-500 group-hover:text-blue-600 transition-colors duration-300">
-                    <div className="relative">
-                      <svg className="w-24 h-24 mx-auto mb-6 text-blue-500 group-hover:text-blue-600 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                    <p className="text-xl font-semibold mb-3 text-gray-700">Smart Electrical Infrastructure</p>
-                    <p className="text-sm text-gray-500">Advanced Power Systems Solutions</p>
+                <div className="relative">
+                  <img 
+                    src="/images/services/smart-electrical-infrastructure.jpg" 
+                    alt="Smart Electrical Infrastructure - Advanced power systems solutions and modern substation technology"
+                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-500 transform group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-2xl"></div>
+                  <div className="absolute bottom-6 left-6 text-white">
+                    <p className="text-xl font-semibold mb-2 text-white drop-shadow-lg">Smart Electrical Infrastructure</p>
+                    <p className="text-sm text-white/90 drop-shadow-md">Advanced Power Systems Solutions</p>
+                  </div>
+                  <div className="absolute top-6 right-6 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    Featured Project
                   </div>
                 </div>
               </div>

@@ -48,14 +48,20 @@ const Services = () => {
             </div>
             
             <div>
-              {/* Placeholder for engineers on drawing table photo */}
-              <div className="bg-gray-300 h-96 rounded-lg shadow-xl flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                  <p className="text-lg font-semibold">Engineers on Drawing Table</p>
-                  <p className="text-sm">Professional design collaboration</p>
+              {/* Smart Electrical Infrastructure Photo */}
+              <div className="relative group">
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                <div className="relative">
+                  <img 
+                    src="/images/services/smart-electrical-infrastructure.jpg" 
+                    alt="Smart Electrical Infrastructure - Advanced power systems design and engineering"
+                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-lg font-semibold mb-1">Smart Electrical Infrastructure</p>
+                    <p className="text-sm opacity-90">Professional design collaboration</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -106,14 +112,38 @@ const Services = () => {
             </div>
             
             <div className="lg:order-1">
-              {/* Placeholder for transformer crane installation photo */}
-              <div className="bg-gray-300 h-96 rounded-lg shadow-xl flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                  </svg>
-                  <p className="text-lg font-semibold">Transformer Crane Installation</p>
-                  <p className="text-sm">Heavy equipment installation expertise</p>
+              {/* Installation & Construction Photo Gallery */}
+              <div className="space-y-6">
+                <div className="relative group">
+                  <div className="absolute -inset-2 bg-gradient-to-r from-orange-100 to-blue-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                  <div className="relative">
+                    <img 
+                      src="/images/services/installation-construction-1.jpg" 
+                      alt="Installation & Construction - Transformer crane installation and heavy equipment expertise"
+                      className="w-full h-64 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <p className="text-lg font-semibold mb-1">Heavy Installation</p>
+                      <p className="text-sm opacity-90">Transformer & crane operations</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="relative group">
+                  <div className="absolute -inset-2 bg-gradient-to-r from-blue-100 to-orange-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                  <div className="relative">
+                    <img 
+                      src="/images/services/installation-construction-2.jpg" 
+                      alt="Installation & Construction - Electrical system installation and construction work"
+                      className="w-full h-64 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <p className="text-lg font-semibold mb-1">System Construction</p>
+                      <p className="text-sm opacity-90">Electrical installation work</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -175,14 +205,38 @@ const Services = () => {
             </div>
             
             <div>
-              {/* Placeholder for Edmund in green vest testing photo */}
-              <div className="bg-gray-300 h-96 rounded-lg shadow-xl flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                  <p className="text-lg font-semibold">Edmund Green Vest Testing</p>
-                  <p className="text-sm">Professional testing and commissioning</p>
+              {/* Testing & Commissioning Services Photo Gallery */}
+              <div className="space-y-6">
+                <div className="relative group">
+                  <div className="absolute -inset-2 bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                  <div className="relative">
+                    <img 
+                      src="/images/services/testing-commissioning-services-1.jpg" 
+                      alt="Testing & Commissioning Services - Professional testing and commissioning by certified engineers"
+                      className="w-full h-64 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <p className="text-lg font-semibold mb-1">Testing & Commissioning</p>
+                      <p className="text-sm opacity-90">Professional testing procedures</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="relative group">
+                  <div className="absolute -inset-2 bg-gradient-to-r from-blue-100 to-green-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                  <div className="relative">
+                    <img 
+                      src="/images/services/testing-commissioning-services-2.jpg" 
+                      alt="Testing & Commissioning Services - Advanced equipment testing and system validation"
+                      className="w-full h-64 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <p className="text-lg font-semibold mb-1">System Validation</p>
+                      <p className="text-sm opacity-90">Advanced equipment testing</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -246,15 +300,20 @@ const Services = () => {
             </div>
             
             <div className="lg:order-1">
-              {/* Placeholder for maintenance work photo */}
-              <div className="bg-gray-300 h-96 rounded-lg shadow-xl flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <p className="text-lg font-semibold">Maintenance & Repair</p>
-                  <p className="text-sm">Expert maintenance services</p>
+              {/* Maintenance, Rehabilitation & Repair Photo */}
+              <div className="relative group">
+                <div className="absolute -inset-2 bg-gradient-to-r from-purple-100 to-blue-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                <div className="relative">
+                  <img 
+                    src="/images/services/maintenance-rehabilitation-repair.jpg" 
+                    alt="Maintenance, Rehabilitation & Repair - Expert maintenance and repair services for electrical systems"
+                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-lg font-semibold mb-1">Maintenance & Repair</p>
+                    <p className="text-sm opacity-90">Expert maintenance services</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -328,14 +387,20 @@ const Services = () => {
             </div>
             
             <div>
-              {/* Placeholder for training photo */}
-              <div className="bg-gray-300 h-96 rounded-lg shadow-xl flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                  <p className="text-lg font-semibold">Power Systems Training</p>
-                  <p className="text-sm">Professional development programs</p>
+              {/* Training Photo */}
+              <div className="relative group">
+                <div className="absolute -inset-2 bg-gradient-to-r from-yellow-100 to-blue-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                <div className="relative">
+                  <img 
+                    src="/images/services/training.jpg" 
+                    alt="Power Systems Training - Comprehensive training programs for electrical engineering professionals"
+                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-lg font-semibold mb-1">Power Systems Training</p>
+                    <p className="text-sm opacity-90">Professional development programs</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -368,7 +433,7 @@ const Services = () => {
                   className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <span className="flex items-center">
-                    Get Free Consultation
+                    Make Enquiries
                     <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
