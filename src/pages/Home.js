@@ -6,15 +6,6 @@ const Home = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-white overflow-hidden">
-        {/* Logo Watermark Background */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <img 
-            src="/logos/logo.svg" 
-            alt="Blue Stud Engineering Limited Logo Watermark" 
-            className="w-96 h-96 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] object-contain opacity-5 filter grayscale"
-          />
-        </div>
-        
         {/* Subtle Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-100 to-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>

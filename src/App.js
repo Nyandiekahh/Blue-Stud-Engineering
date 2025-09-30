@@ -30,7 +30,15 @@ function App() {
       <Preloader isVisible={isLoading} />
       {!isLoading && (
         <Router>
-          <div className="min-h-screen bg-gray-50">
+          <div className="min-h-screen bg-gray-50 relative">
+            {/* Global Logo Watermark Background */}
+            <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0">
+              <img 
+                src="/logos/logo.svg" 
+                alt="Blue Stud Engineering Limited Logo Watermark" 
+                className="w-96 h-96 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] object-contain opacity-5 filter grayscale"
+              />
+            </div>
             <Navbar />
             <div className="pt-16">
               <Routes>
