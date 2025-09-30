@@ -27,7 +27,7 @@ const Preloader = ({ isVisible }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
       {/* Background gradient animation */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-orange-50 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-50 animate-pulse"></div>
       
       {/* Main logo container */}
       <div className="relative flex flex-col items-center justify-center">
@@ -51,7 +51,7 @@ const Preloader = ({ isVisible }) => {
         
         {/* Loading text with fade animation */}
         <div className="mt-8 animate-pulse">
-          <p className="text-lg sm:text-xl font-semibold text-blue-600 text-center">
+          <p className="text-lg sm:text-xl font-semibold text-blue-900 text-center">
             Blue Stud Engineering Limited
           </p>
           <p className="text-sm text-gray-500 text-center mt-2">
@@ -61,9 +61,9 @@ const Preloader = ({ isVisible }) => {
         
         {/* Loading dots */}
         <div className="flex space-x-1 mt-6">
-          <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce"></div>
-          <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce animation-delay-200"></div>
-          <div className="w-2 h-2 bg-blue-500 rounded-full animate-bounce animation-delay-400"></div>
+          <div className="w-2 h-2 bg-blue-900 rounded-full animate-bounce"></div>
+          <div className="w-2 h-2 bg-blue-900 rounded-full animate-bounce animation-delay-200"></div>
+          <div className="w-2 h-2 bg-blue-900 rounded-full animate-bounce animation-delay-400"></div>
         </div>
       </div>
     </div>
