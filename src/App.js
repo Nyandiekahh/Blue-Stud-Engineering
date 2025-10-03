@@ -9,6 +9,7 @@ import Preloader from './components/Preloader';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+import Products from './pages/Products';
 import Engineers from './pages/Engineers';
 import FacilityManagement from './pages/FacilityManagement';
 import Contact from './pages/Contact';
@@ -45,6 +46,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
+                <Route path="/products" element={<Products />} />
                 <Route path="/engineers" element={<Engineers />} />
                 <Route path="/facility-management" element={<FacilityManagement />} />
                 <Route path="/contact" element={<Contact />} />

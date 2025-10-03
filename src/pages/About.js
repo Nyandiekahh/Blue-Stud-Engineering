@@ -9,12 +9,12 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-blue-900 mb-6">Company Overview</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed text-justify">
                 Blue Stud Engineering Limited specializes in electrical power systems and renewables 
                 with extensive experience in LV (Low Voltage), MV (Medium Voltage), and HV (High Voltage) 
                 systems design, from concept to completion.
               </p>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed text-justify">
                 Our expertise encompasses substation design, installation, testing, commissioning, 
                 automation and control solutions. We are committed to delivering high-quality engineering 
                 solutions that meet international standards and exceed client expectations.
@@ -22,19 +22,19 @@ const About = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <h3 className="font-semibold text-blue-900 mb-2">LV Systems</h3>
-                  <p className="text-sm text-gray-600">Low Voltage electrical systems design and implementation</p>
+                  <p className="text-sm text-gray-600 text-justify">Low Voltage electrical systems design and implementation</p>
                 </div>
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <h3 className="font-semibold text-blue-900 mb-2">MV Systems</h3>
-                  <p className="text-sm text-gray-600">Medium Voltage distribution and control systems</p>
+                  <p className="text-sm text-gray-600 text-justify">Medium Voltage distribution and control systems</p>
                 </div>
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <h3 className="font-semibold text-blue-900 mb-2">HV Systems</h3>
-                  <p className="text-sm text-gray-600">High Voltage transmission and substation systems</p>
+                  <p className="text-sm text-gray-600 text-justify">High Voltage transmission and substation systems</p>
                 </div>
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <h3 className="font-semibold text-blue-900 mb-2">Renewables</h3>
-                  <p className="text-sm text-gray-600">Sustainable energy solutions and integration</p>
+                  <p className="text-sm text-gray-600 text-justify">Sustainable energy solutions and integration</p>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Expertise</h2>
-            <p className="text-xl text-gray-600">Highly skilled engineers with vast experience</p>
+            <p className="text-xl text-gray-600 text-justify">Highly skilled engineers with vast experience</p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -124,7 +124,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">Qualified Engineers</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-justify">
                       Our team comprises highly skilled engineers with vast experience in electrical power systems. 
                       All engineers hold BSc Degrees in Electrical Engineering and are members of the Engineers 
                       Board of Kenya (EBK) and the Institute of Engineers of Kenya (IEK).
@@ -138,7 +138,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">Industry Experience</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-justify">
                       With more than a decade of experience, our engineers have worked with industry giants 
                       like ABB and Schneider Electric, bringing world-class expertise to every project.
                     </p>
@@ -151,7 +151,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">Specialized Knowledge</h4>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-justify">
                       Expertise in power systems protection commissioning, automation, distributed 
                       generation, and IEC61850 integration ensures cutting-edge solutions for our clients.
                     </p>
@@ -168,7 +168,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-blue-900 mb-4">EPCIC Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto text-justify">
               Comprehensive project delivery through our integrated Design, Engineering, Procurement, 
               Installation & Commissioning approach
             </p>
@@ -183,7 +183,7 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Design</h3>
-              <p className="text-gray-600 text-sm leading-relaxed text-center">
+              <p className="text-gray-600 text-sm leading-relaxed text-center text-justify">
                 Innovative electrical system design from conceptual layouts to detailed technical drawings and specifications.
               </p>
             </div>
@@ -197,7 +197,7 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Engineering</h3>
-              <p className="text-gray-600 text-sm leading-relaxed text-center">
+              <p className="text-gray-600 text-sm leading-relaxed text-center text-justify">
                 Advanced engineering analysis, calculations, and technical solutions for complex electrical power systems.
               </p>
             </div>
@@ -210,7 +210,7 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Procurement</h3>
-              <p className="text-gray-600 text-sm leading-relaxed text-center">
+              <p className="text-gray-600 text-sm leading-relaxed text-center text-justify">
                 Strategic sourcing and procurement of quality electrical equipment from certified suppliers and manufacturers.
               </p>
             </div>
@@ -223,7 +223,7 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Installation</h3>
-              <p className="text-gray-600 text-sm leading-relaxed text-center">
+              <p className="text-gray-600 text-sm leading-relaxed text-center text-justify">
                 Professional installation services by certified technicians with 10+ years of field experience.
               </p>
             </div>
@@ -236,7 +236,7 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Commissioning</h3>
-              <p className="text-gray-600 text-sm leading-relaxed text-center">
+              <p className="text-gray-600 text-sm leading-relaxed text-center text-justify">
                 Comprehensive testing, commissioning and system validation to ensure optimal performance and compliance.
               </p>
             </div>
@@ -273,7 +273,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <p className="text-center text-gray-600 mt-6 leading-relaxed">
+            <p className="text-center text-gray-600 mt-6 leading-relaxed text-justify">
               Our systematic approach ensures seamless project execution from initial concept to final delivery, 
               with quality control and client communication at every stage.
             </p>
@@ -286,7 +286,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Approach</h2>
-            <p className="text-xl text-gray-600">Commitment to excellence in every project phase</p>
+            <p className="text-xl text-gray-600 text-justify">Commitment to excellence in every project phase</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -297,7 +297,7 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Innovation</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 We leverage cutting-edge technology and innovative approaches to deliver state-of-the-art 
                 electrical engineering solutions that meet modern industry standards.
               </p>
@@ -310,7 +310,7 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Quality</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Our commitment to quality is unwavering. Every project undergoes rigorous testing and 
                 quality control measures to ensure reliability and safety compliance.
               </p>
@@ -323,7 +323,7 @@ const About = () => {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Collaboration</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 We work closely with our clients from concept to completion, ensuring that every solution 
                 is tailored to meet specific requirements and exceeds expectations.
               </p>

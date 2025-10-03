@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,30 +11,152 @@ const Contact = () => {
     message: ''
   });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
+  // Captcha state
+  const [captcha, setCaptcha] = useState({
+    num1: Math.floor(Math.random() * 10) + 1,
+    num2: Math.floor(Math.random() * 10) + 1,
+    userAnswer: '',
+    isVerified: false
+  });
+
+  // Map state
+  const [map, setMap] = useState(null);
+  const [userLocation, setUserLocation] = useState(null);
+  
+  // Office location (Blue Stud Engineering)
+  const officeLocation = {
+    lat: -1.4666295,
+    lng: 36.9546105,
+    name: "Blue Stud Engineering Ltd",
+    address: "High View Plaza, Kiambu Road, Thindigua"
+  };
+
+    const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleCaptchaChange = (e) => {
+    const userAnswer = parseInt(e.target.value);
+    const correctAnswer = captcha.num1 + captcha.num2;
+    setCaptcha(prev => ({
+      ...prev,
+      userAnswer: e.target.value,
+      isVerified: userAnswer === correctAnswer
+    }));
+  };
+
+  const regenerateCaptcha = () => {
+    setCaptcha({
+      num1: Math.floor(Math.random() * 10) + 1,
+      num2: Math.floor(Math.random() * 10) + 1,
+      userAnswer: '',
+      isVerified: false
     });
   };
 
+  // Initialize Google Maps
+  useEffect(() => {
+    const initMap = () => {
+      if (window.google) {
+        const mapElement = document.getElementById('interactive-map');
+        const loadingElement = document.getElementById('map-loading');
+        
+
+      }
+    };
+
+    // For now, let's use a simpler iframe approach with user location detection
+    // This will work without needing a Google Maps API key
+    initSimpleMap();
+
+    function initSimpleMap() {
+      const mapElement = document.getElementById('interactive-map');
+      const loadingElement = document.getElementById('map-loading');
+      
+      if (mapElement) {
+        // Create a simple iframe map showing office location
+        mapElement.innerHTML = `
+          <iframe
+            src="https://maps.google.com/maps?q=-1.4666295,36.9546105&hl=en&z=16&output=embed"
+            width="100%"
+            height="100%"
+            style="border: 0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Blue Stud Engineering Ltd - High View Plaza, Kiambu Road"
+            class="rounded-t-2xl">
+          </iframe>
+        `;
+        
+        if (loadingElement) {
+          loadingElement.style.display = 'none';
+        }
+
+        // Set up locate user button for directions
+        const locateBtn = document.getElementById('locate-user-btn');
+        if (locateBtn) {
+          locateBtn.addEventListener('click', () => {
+            if (navigator.geolocation) {
+              locateBtn.innerHTML = '<span>🔍 Getting location...</span>';
+              locateBtn.disabled = true;
+
+              navigator.geolocation.getCurrentPosition(
+                (position) => {
+                  const userLat = position.coords.latitude;
+                  const userLng = position.coords.longitude;
+                  
+                  // Open Google Maps with directions from user location to office
+                  const directionsUrl = `https://www.google.com/maps/dir/${userLat},${userLng}/-1.4666295,36.9546105`;
+                  window.open(directionsUrl, '_blank');
+                  
+                  locateBtn.innerHTML = '<span>🗺️ Directions Opened</span>';
+                  locateBtn.disabled = false;
+                },
+                (error) => {
+                  console.error('Geolocation error:', error);
+                  alert('Unable to get your location. Please enable location services and try again.');
+                  locateBtn.innerHTML = '<span>📍 Find My Location</span>';
+                  locateBtn.disabled = false;
+                }
+              );
+            } else {
+              alert('Geolocation is not supported by this browser.');
+            }
+          });
+        }
+      }
+    }
+
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Check if captcha is verified
+    if (!captcha.isVerified) {
+      alert('Please solve the security question correctly before submitting.');
+      return;
+    }
     
     // Create WhatsApp message
     const whatsappMessage = `Hello Blue Stud Engineering!
 
 I would like to enquire about your electrical engineering services.
 
-*Contact Details:*
+Contact Details:
 Name: ${formData.firstName} ${formData.lastName}
 Email: ${formData.email}
 Phone: ${formData.phone}
 ${formData.company ? `Company: ${formData.company}` : ''}
 
-*Service Interested In:* ${formData.service || 'General Consultation'}
+Service Interested In: ${formData.service || 'General Consultation'}
 
-*Project Details/Message:*
+Project Details/Message:
 ${formData.message || 'No additional details provided.'}
 
 Please get back to me with more information about your services and availability.
@@ -44,10 +166,10 @@ Thank you!`;
     // Encode message for WhatsApp URL
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappURL = `https://wa.me/254768967878?text=${encodedMessage}`;
-    
+
     // Open WhatsApp
     window.open(whatsappURL, '_blank');
-    
+
     // Reset form after sending
     setFormData({
       firstName: '',
@@ -58,15 +180,14 @@ Thank you!`;
       service: '',
       message: ''
     });
-    
-    // Show success message
+
+    // Generate new captcha and show success message
+    regenerateCaptcha();
     alert('Your enquiry has been sent via WhatsApp! We will get back to you soon.');
   };
 
   return (
     <div className="min-h-screen bg-white">
-
-
       {/* Contact Form and Info */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -76,6 +197,7 @@ Thank you!`;
               Get in touch with our expert engineering team for professional electrical power systems solutions.
             </p>
           </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
@@ -96,6 +218,7 @@ Thank you!`;
                       className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-900 focus:border-blue-900"
                     />
                   </div>
+
                   <div>
                     <label htmlFor="last-name" className="block text-sm font-medium text-gray-700 mb-2">
                       Last Name
@@ -170,8 +293,11 @@ Thank you!`;
                     <option value="">Select a service</option>
                     <option value="power-systems-design">Power Systems Design</option>
                     <option value="installation-construction">Installation & Construction</option>
+                    <option value="power-lines-construction">Power Lines Construction</option>
                     <option value="testing-commissioning">Testing & Commissioning</option>
                     <option value="maintenance-repair">Maintenance & Repair</option>
+                    <option value="transformer-services">Transformer Services</option>
+                    <option value="power-quality-analysis">Power Quality Analysis</option>
                     <option value="consultation">General Consultation</option>
                   </select>
                 </div>
@@ -191,9 +317,49 @@ Thank you!`;
                   ></textarea>
                 </div>
 
+                {/* Security Captcha */}
+                <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Security Question
+                  </label>
+                  <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-x-2">
+                      <span className="text-lg font-semibold text-blue-900">
+                        {captcha.num1} + {captcha.num2} =
+                      </span>
+                      <input
+                        type="number"
+                        value={captcha.userAnswer}
+                        onChange={handleCaptchaChange}
+                        className="w-20 px-3 py-2 border border-gray-300 rounded-md text-center focus:outline-none focus:ring-blue-900 focus:border-blue-900"
+                        placeholder="?"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      onClick={regenerateCaptcha}
+                      className="text-blue-900 hover:text-blue-700 font-medium text-sm"
+                    >
+                      Refresh
+                    </button>
+                    {captcha.isVerified && (
+                      <div className="flex items-center text-green-600">
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                    )}
+                  </div>
+                  <p className="text-xs text-gray-600 mt-2">
+                    Please solve this simple math problem to verify you're human.
+                  </p>
+                </div>
+
                 <button
                   type="submit"
-                  className="w-full bg-green-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-green-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 flex items-center justify-center space-x-2"
+                  className="w-full bg-green-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-green-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 flex items-center justify-center space-x-2 disabled:bg-gray-400 disabled:cursor-not-allowed"
+                  disabled={!captcha.isVerified}
                 >
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.520.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
@@ -232,7 +398,7 @@ Thank you!`;
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                       <div>
-                        <p className="font-medium text-gray-900">Head Office</p>
+                        <p className="font-medium text-gray-900">Physical Address</p>
                         <p className="text-gray-600">Nairobi, Kenya</p>
                       </div>
                     </div>
@@ -243,7 +409,7 @@ Thank you!`;
                       </svg>
                       <div>
                         <p className="font-medium text-gray-900">Phone & WhatsApp</p>
-                        <a href="tel:+254768967878" className="text-blue-900 hover:text-blue-800 transition-colors">+254 768 967 878</a>
+                        <a href="tel:+254768967878" className="text-blue-900 hover:text-gray-900 transition-colors">+254 768 967 878</a>
                       </div>
                     </div>
 
@@ -253,7 +419,7 @@ Thank you!`;
                       </svg>
                       <div>
                         <p className="font-medium text-gray-900">Email</p>
-                        <p className="text-gray-600">info@bluestudengineering.com</p>
+                        <a href="mailto:info@bluestud-engineering.com" className="text-blue-900 hover:text-gray-900 transition-colors">info@bluestud-engineering.com</a>
                       </div>
                     </div>
                   </div>
@@ -273,8 +439,102 @@ Thank you!`;
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-gray-700">Monday - Friday</span>
-                      <span className="text-gray-900 font-medium">8:00 AM - 4:30 PM</span>
+                      <span className="text-gray-900 font-medium">8:00 AM - 5:00 PM</span>
                     </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Saturday</span>
+                      <span className="text-gray-900 font-medium">8:00 AM - 1:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-700">Sunday</span>
+                      <span className="text-gray-900 font-medium">Closed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Location Map Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Location</h2>
+            <p className="text-xl text-gray-600">Find us in Nairobi, Kenya</p>
+          </div>
+          
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            {/* Google Maps Embed */}
+            <div className="relative h-96">
+              {/* Interactive Map Container */}
+              <div 
+                id="interactive-map" 
+                className="w-full h-full rounded-t-2xl"
+              ></div>
+              
+              {/* Map Controls */}
+              <div className="absolute top-4 left-4 z-10">
+                <button
+                  id="locate-user-btn"
+                  className="bg-white shadow-lg rounded-lg px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 border border-gray-200 flex items-center space-x-2"
+                >
+                  <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span>Find My Location</span>
+                </button>
+              </div>
+
+              {/* Loading State */}
+              <div id="map-loading" className="absolute inset-0 bg-gray-100 flex items-center justify-center rounded-t-2xl">
+                <div className="text-center">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto mb-2"></div>
+                  <p className="text-gray-600 text-sm">Loading map...</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Location Details */}
+            <div className="p-6 bg-gradient-to-r from-blue-50 to-blue-100 border-t border-blue-200">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="text-lg font-semibold text-blue-900 mb-3">Office Address</h3>
+                  <div className="space-y-2 text-gray-700">
+                    <p className="flex items-start space-x-2">
+                      <svg className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span>
+                        Blue Stud Engineering Ltd.<br />
+                        High View Plaza<br />
+                        Kiambu Road, Thindigua<br />
+                        Nairobi, Kenya
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-lg font-semibold text-blue-900 mb-3">Get Directions</h3>
+                  <div className="space-y-3">
+                    <a
+                      href="https://maps.app.goo.gl/4SUzfXgGKLBcpDk38"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-1.447-.894L15 4m0 13V4m-6 3l6-3" />
+                      </svg>
+                      <span>Get Directions</span>
+                    </a>
+                    <p className="text-sm text-gray-600">
+                      Click to open in Google Maps for turn-by-turn navigation
+                    </p>
                   </div>
                 </div>
               </div>
@@ -297,7 +557,7 @@ Thank you!`;
           
           <div className="relative inline-block">
             {/* Animated Border */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-blue-800 via-blue-900 to-blue-900 rounded-3xl blur opacity-30 group-hover:opacity-50 animate-pulse"></div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-gray-900 via-blue-900 to-blue-900 rounded-3xl blur opacity-30 group-hover:opacity-50 animate-pulse"></div>
             
             {/* QR Code Container */}
             <div className="relative bg-white p-8 rounded-3xl shadow-2xl border-4 border-blue-100 hover:border-blue-300 transition-all duration-300 transform hover:scale-105">
@@ -380,26 +640,6 @@ Thank you!`;
               <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Expert Team</h3>
-              <p className="text-gray-600">Highly skilled engineers with vast experience and professional certifications</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Quality Assurance</h3>
-              <p className="text-gray-600">Rigorous testing and quality control measures ensure reliable solutions</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Timely Delivery</h3>

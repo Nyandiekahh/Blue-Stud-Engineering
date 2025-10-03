@@ -5,24 +5,30 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center mb-6">
                 <img 
                   src="/bel-logo.jpg" 
                   alt="BEL Logo" 
-                  className="w-12 h-12 rounded-lg object-contain mr-4"
+                  className="w-16 h-16 rounded-lg object-contain mr-4"
                 />
-                <span className="text-2xl font-bold text-white">Blue Stud Engineering Limited</span>
+                <div className="flex flex-col leading-tight">
+                  <span className="text-white font-bold text-xl">Blue Stud</span>
+                  <span className="text-white font-bold text-xl">Engineering</span>
+                  <span className="text-white font-bold text-xl">Limited</span>
+                </div>
               </div>
               <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-                Leading Engineering, Procurement and Construction (EPC) company specializing in power systems design, 
+                Leading Engineering, Procurement and Construction (EPC) company specializing in power systems design,
                 substation construction, and comprehensive testing & commissioning services across Kenya and East Africa.
               </p>
-              
+
               {/* Contact Information */}
               <div className="space-y-3 mb-6">
                 <div className="flex items-start space-x-3">
@@ -30,7 +36,7 @@ const Footer = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span className="text-gray-400">Kiambu Road, High View Plaza, Nairobi, Kenya</span>
+                  <span className="text-gray-400">Nairobi, Kenya</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
@@ -40,15 +46,26 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <a href="mailto:info@bluestud-engineering.com" className="text-gray-400 hover:text-white transition-colors">info@bluestud-engineering.com</a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span className="text-gray-400">Monday to Friday: 8:00 AM - 4:30 PM</span>
+                  <div className="text-gray-400">
+                    <div>Monday to Friday: 8:00 AM - 5:00 PM</div>
+                    <div>Saturday: 8:00 AM - 1:00 PM</div>
+                    <div>Sunday: Closed</div>
+                  </div>
                 </div>
               </div>
-              
+
+              {/* Social Links */}
               <div className="flex space-x-4">
                 <a 
-                  href="mailto:info@bluestudengineering.com" 
+                  href="mailto:info@bluestud-engineering.com" 
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                   aria-label="Email"
                 >
@@ -83,58 +100,34 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-6 text-white">Quick Links</h3>
               <ul className="space-y-3">
-                <li>
-                  <Link 
-                    to="/" 
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/about" 
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                  >
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/services" 
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                  >
-                    Our Services
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/engineers" 
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                  >
-                    Our Engineers
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/contact" 
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                  >
-                    Contact
-                  </Link>
-                </li>
+                {[
+                  { name: "Home", path: "/" },
+                  { name: "About Us", path: "/about" },
+                  { name: "Products", path: "/products" },
+                  { name: "Our Services", path: "/services" },
+                  { name: "Our Engineers", path: "/engineers" },
+                  { name: "Contact", path: "/contact" },
+                ].map(link => (
+                  <li key={link.name}>
+                    <Link to={link.path} className="text-gray-400 hover:text-white transition-colors duration-300">
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             {/* Services */}
             <div>
               <h3 className="text-lg font-semibold mb-6 text-white">Our Services</h3>
-              <ul className="space-y-3">
-                <li className="text-gray-400">Power Systems Design</li>
-                <li className="text-gray-400">Substation Construction</li>
-                <li className="text-gray-400">Testing & Commissioning</li>
-                <li className="text-gray-400">Facility Management</li>
-                <li className="text-gray-400">Maintenance Services</li>
+              <ul className="space-y-3 text-gray-400">
+                <li>Power Systems Design</li>
+                <li>Installation & Construction</li>
+                <li>Power Lines Construction</li>
+                <li>Testing & Commissioning</li>
+                <li>Maintenance & Repair</li>
+                <li>Transformer Services</li>
+                <li>Power Systems Training</li>
               </ul>
             </div>
           </div>
@@ -143,12 +136,9 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="border-t border-gray-800 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            {/* Copyright */}
             <div className="text-gray-400 text-sm">
               © {new Date().getFullYear()} Blue Stud Engineering. All rights reserved.
             </div>
-
-            {/* Powered By */}
             <div className="flex items-center space-x-2 text-sm">
               <span className="text-gray-400">Designed & Powered by</span>
               <a 
@@ -168,8 +158,6 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-
-            {/* Legal Links */}
             <div className="flex space-x-6 text-sm">
               <a href="/privacy" className="text-gray-400 hover:text-white transition-colors duration-300">
                 Privacy Policy
@@ -180,6 +168,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
       </div>
     </footer>
   );
