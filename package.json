@@ -47,6 +47,14 @@
     "react-helmet-async": {
       "react": "^19.1.1",
       "react-dom": "^19.1.1"
+    },
+    "@testing-library/react": {
+      "react": "^19.1.1",
+      "react-dom": "^19.1.1"
     }
+  },
+  "resolutions": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }
