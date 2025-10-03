@@ -9,7 +9,7 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center mb-6">
-                <span className="bg-blue-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">01</span>
+                <span className="bg-blue-900 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">01</span>
                 <h2 className="text-4xl font-bold text-blue-900">Power Systems Design</h2>
               </div>
               
@@ -21,25 +21,25 @@ const Services = () => {
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700">Engineering, installation, testing, commissioning, protection and automation of electrical power systems</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700">Substation design and layout optimization</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700">Renewable energy systems integration</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700">Load flow analysis and fault studies</span>
@@ -50,7 +50,7 @@ const Services = () => {
             <div>
               {/* Smart Electrical Infrastructure Photo */}
               <div className="relative group">
-                <div className="absolute -inset-2 bg-gradient-to-r from-blue-100 to-blue-200 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-900 to-blue-800 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500"></div>
                 <div className="relative">
                   <img 
                     src="/images/services/smart-electrical-infrastructure.jpg" 
@@ -75,7 +75,7 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="lg:order-2">
               <div className="flex items-center mb-6">
-                <span className="bg-blue-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">02</span>
+                <span className="bg-blue-900 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">02</span>
                 <h2 className="text-4xl font-bold text-blue-900">Installation & Construction</h2>
               </div>
               
@@ -157,7 +157,7 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center mb-6">
-                <span className="bg-blue-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">03</span>
+                <span className="bg-blue-900 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">03</span>
                 <h2 className="text-4xl font-bold text-blue-900">Testing & Commissioning Services</h2>
               </div>
               
@@ -168,29 +168,29 @@ const Services = () => {
                 of Engineers of Kenya (IEK).
               </p>
               
-              <div className="bg-blue-50 p-6 rounded-lg mb-6">
+              <div className="bg-blue-100 p-6 rounded-lg mb-6">
                 <h4 className="text-xl font-semibold text-blue-900 mb-4">Specialized Expertise</h4>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">Power systems protection commissioning</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">Automation systems integration</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">Distributed generation systems</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <svg className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <span className="text-gray-700">IEC61850 integration</span>
@@ -232,7 +232,7 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="lg:order-2">
               <div className="flex items-center mb-6">
-                <span className="bg-blue-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">04</span>
+                <span className="bg-blue-900 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">04</span>
                 <h2 className="text-4xl font-bold text-blue-900">Maintenance, Rehabilitation & Repair</h2>
               </div>
               
@@ -245,21 +245,21 @@ const Services = () => {
                 <div>
                   <h4 className="text-xl font-semibold text-gray-900 mb-4">Case Examples</h4>
                   <div className="space-y-4">
-                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-600">
+                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-900">
                       <h5 className="font-semibold text-gray-900 mb-1">Vipingo Ridge 132KV/11KV Substation (2024)</h5>
                       <p className="text-sm text-gray-600">
                         Maintenance, rehabilitation and protection relay retrofit works
                       </p>
                     </div>
                     
-                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-600">
+                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-900">
                       <h5 className="font-semibold text-gray-900 mb-1">Equator Energy</h5>
                       <p className="text-sm text-gray-600">
                         Transformer repair works and system optimization
                       </p>
                     </div>
                     
-                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-600">
+                    <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-900">
                       <h5 className="font-semibold text-gray-900 mb-1">Kenya Ports Authority (KPA)</h5>
                       <p className="text-sm text-gray-600">
                         Mombasa substation inspection and maintenance works
@@ -309,8 +309,8 @@ const Services = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center mb-6">
-                <span className="bg-blue-600 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">05</span>
-                <h2 className="text-4xl font-bold text-gray-900">Power Systems Training</h2>
+                <span className="bg-blue-900 text-white text-2xl font-bold rounded-full w-12 h-12 flex items-center justify-center mr-4">05</span>
+                <h2 className="text-4xl font-bold text-blue-900">Power Systems Training</h2>
               </div>
               
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -320,40 +320,40 @@ const Services = () => {
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700">Power systems fundamentals and advanced concepts</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700">Protection and automation systems training</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700">Renewable energy integration workshops</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700">Professional development and certification programs</span>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <svg className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-blue-900 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-gray-700">Hands-on practical sessions and simulations</span>
                 </div>
               </div>
               
-              <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+              <div className="mt-8 p-6 bg-blue-100 rounded-lg">
                 <h4 className="font-bold text-blue-900 mb-3">Training Highlights</h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-blue-800">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-blue-900">
                   <div>
                     <p className="text-gray-700">• Expert instructors with 10+ years experience</p>
                     <p className="text-gray-700">• Industry-recognized certifications</p>
@@ -391,12 +391,12 @@ const Services = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-blue-50 to-gray-50 py-20">
+      <section className="bg-gradient-to-r from-blue-100 to-gray-50 py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>
@@ -412,7 +412,7 @@ const Services = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a 
                   href="/contact" 
-                  className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="group bg-blue-900 hover:bg-blue-900 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <span className="flex items-center">
                     For Enquiries
@@ -423,7 +423,7 @@ const Services = () => {
                 </a>
                 <a 
                   href="/about" 
-                  className="group border-2 border-gray-300 text-gray-700 hover:border-blue-600 hover:text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200"
+                  className="group border-2 border-gray-300 text-gray-700 hover:border-blue-900 hover:text-blue-900 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200"
                 >
                   <span className="flex items-center">
                     Learn More About Us
@@ -438,7 +438,7 @@ const Services = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
                   <div className="flex flex-col items-center">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
@@ -448,7 +448,7 @@ const Services = () => {
                   
                   <div className="flex flex-col items-center">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
-                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
@@ -457,8 +457,8 @@ const Services = () => {
                   </div>
                   
                   <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-3">
-                      <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                      <svg className="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                     </div>
