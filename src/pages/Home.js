@@ -1,7 +1,53 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEOHead from '../components/SEOHead';
 const Home = () => {
+  const homeSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://bluestudengineering.com/#webpage",
+    "url": "https://bluestudengineering.com",
+    "name": "Blue Stud Engineering - Top Electrical Engineering Services in Kenya",
+    "description": "Leading electrical engineering company in Kenya specializing in EPC services, power systems design, HV/MV/LV substations, testing & commissioning, and renewable energy solutions.",
+    "isPartOf": {
+      "@id": "https://bluestudengineering.com/#website"
+    },
+    "about": {
+      "@id": "https://bluestudengineering.com/#organization"
+    },
+    "mainEntity": {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question", 
+          "name": "What electrical engineering services does Blue Stud Engineering provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Blue Stud Engineering provides comprehensive electrical engineering services including power systems design, HV/MV/LV substation construction, testing & commissioning, renewable energy solutions, facility management, and industrial electrical services across Kenya and East Africa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Blue Stud Engineering located in Kenya?", 
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Blue Stud Engineering is located at High View Plaza, Kiambu Road, Thindigua, Nairobi, Kenya. We serve clients across Kenya and the broader East African region."
+          }
+        }
+      ]
+    }
+  };
+
 return (
+<>
+<SEOHead 
+  title="Top Electrical Engineering Services in Kenya | Power Systems & Substations"
+  description="Leading electrical engineering company in Kenya specializing in EPC services, power systems design, HV/MV/LV substations, testing & commissioning, and renewable energy solutions. Trusted by Mombasa Cement, Devki Group & Equator Energy."
+  keywords="electrical engineering Kenya, EPC services Nairobi, power systems design Kenya, substation construction Kenya, electrical contractors Nairobi, renewable energy Kenya, Blue Stud Engineering"
+  canonical="https://bluestudengineering.com"
+  ogType="website"
+  schemaData={homeSchemaData}
+/>
 <div className="min-h-screen bg-white">
 {/* Hero Section */}
 <section className="relative bg-white overflow-hidden">
@@ -768,6 +814,7 @@ return (
     </div>
   </section>
 </div>
+</>
 );
 };
 

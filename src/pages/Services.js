@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEOHead from '../components/SEOHead';
 
 const Services = () => {
   const [showResponsibilityMatrix, setShowResponsibilityMatrix] = useState(false);
@@ -81,7 +82,38 @@ const Services = () => {
     </div>
   );
 
+  const servicesSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://bluestudengineering.com/services#services",
+    "name": "Electrical Engineering Services by Blue Stud Engineering",
+    "description": "Comprehensive electrical engineering services including power systems design, substation construction, testing & commissioning, and renewable energy solutions in Kenya.",
+    "provider": {
+      "@id": "https://bluestudengineering.com/#organization"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Kenya"
+    },
+    "serviceType": [
+      "Power Systems Design",
+      "Substation Construction",
+      "Testing & Commissioning", 
+      "Renewable Energy Solutions",
+      "Industrial Electrical Services",
+      "Facility Management"
+    ]
+  };
+
   return (
+    <>
+      <SEOHead 
+        title="Electrical Engineering Services Kenya | Power Systems Design & Substation Construction"
+        description="Professional electrical engineering services in Kenya including power systems design, HV/MV/LV substation construction, testing & commissioning, and renewable energy solutions. Expert EPC services for industrial applications."
+        keywords="electrical engineering services Kenya, power systems design Nairobi, substation construction Kenya, testing commissioning services, EPC electrical contractors, renewable energy engineering Kenya, industrial electrical services, HV MV LV systems Kenya"
+        canonical="https://bluestudengineering.com/services"
+        schemaData={servicesSchemaData}
+      />
     <div className="min-h-screen bg-white">
       {/* Responsibility Matrix Modal */}
       {showResponsibilityMatrix && <ResponsibilityMatrixModal />}
@@ -821,6 +853,7 @@ const Services = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

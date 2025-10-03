@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://bluestudengineering.com/</loc>
+    <lastmod>2025-10-03T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bluestudengineering.com/logos/logo.svg</image:loc>
+      <image:caption>Blue Stud Engineering - Leading Electrical Engineering Services in Kenya</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://bluestudengineering.com/about</loc>
+    <lastmod>2025-10-03T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Services Page -->
+  <url>
+    <loc>https://bluestudengineering.com/services</loc>
+    <lastmod>2025-10-03T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bluestudengineering.com/images/services/smart-electrical-infrastructure.jpg</image:loc>
+      <image:caption>Smart Electrical Infrastructure - Power Systems and Substation Services</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bluestudengineering.com/images/services/testing-commissioning-services-1.jpg</image:loc>
+      <image:caption>Professional Testing and Commissioning Services</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Products Page -->
+  <url>
+    <loc>https://bluestudengineering.com/products</loc>
+    <lastmod>2025-10-03T00:00:00+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Engineers Page -->
+  <url>
+    <loc>https://bluestudengineering.com/engineers</loc>
+    <lastmod>2025-10-03T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://bluestudengineering.com/images/gallery/engineers-drawing-table.jpg</image:loc>
+      <image:caption>Professional Engineering Team at Blue Stud Engineering</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://bluestudengineering.com/contact</loc>
+    <lastmod>2025-10-03T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Facility Management Page -->
+  <url>
+    <loc>https://bluestudengineering.com/facility-management</loc>
+    <lastmod>2025-10-03T00:00:00+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

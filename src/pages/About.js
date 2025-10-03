@@ -1,7 +1,28 @@
 import React from 'react';
+import SEOHead from '../components/SEOHead';
 
 const About = () => {
+  const aboutSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://bluestudengineering.com/about#aboutpage",
+    "url": "https://bluestudengineering.com/about",
+    "name": "About Blue Stud Engineering - Leading Electrical Engineering Company in Kenya",
+    "description": "Learn about Blue Stud Engineering, Kenya's premier electrical engineering company with 10+ years of experience in power systems, substations, and renewable energy solutions.",
+    "mainEntity": {
+      "@id": "https://bluestudengineering.com/#organization"
+    }
+  };
+
   return (
+    <>
+      <SEOHead 
+        title="About Blue Stud Engineering - Leading Electrical Engineering Company in Kenya"
+        description="Learn about Blue Stud Engineering, Kenya's premier electrical engineering company with 10+ years of experience in power systems design, substation construction, testing & commissioning, and renewable energy solutions. Trusted by tier-1 industries across Kenya."
+        keywords="about Blue Stud Engineering, electrical engineering company Kenya, power systems expertise, engineering team Kenya, EPC contractor Nairobi, electrical engineering experience Kenya"
+        canonical="https://bluestudengineering.com/about"
+        schemaData={aboutSchemaData}
+      />
     <div className="min-h-screen bg-white">
       {/* Company Overview */}
       <section className="py-16">
@@ -332,6 +353,7 @@ const About = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

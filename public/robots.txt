@@ -1,3 +1,36 @@
+# Blue Stud Engineering - Leading Electrical Engineering Services in Kenya
 # https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /search?*
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Block aggressive crawlers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://bluestudengineering.com/sitemap.xml
+
+# Additional resources
+# Company: Blue Stud Engineering Ltd
+# Location: High View Plaza, Kiambu Road, Thindigua, Nairobi, Kenya
+# Services: Electrical Engineering, Power Systems Design, Substation Construction
+# Contact: +254-768-967-878

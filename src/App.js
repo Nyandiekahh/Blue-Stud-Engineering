@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 
 // Import components
@@ -27,7 +28,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <HelmetProvider>
       <Preloader isVisible={isLoading} />
       {!isLoading && (
         <Router>
@@ -56,7 +57,7 @@ function App() {
           </div>
         </Router>
       )}
-    </>
+    </HelmetProvider>
   );
 }
 
