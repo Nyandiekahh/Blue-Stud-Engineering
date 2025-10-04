@@ -57,7 +57,7 @@ return (
 <div className="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-blue-50 to-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse animation-delay-2000"></div>
 <div className="absolute -bottom-32 left-20 w-72 h-72 bg-gradient-to-r from-blue-100 to-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse animation-delay-4000"></div>
 </div>
-    <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-32">
+    <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-32">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         <div className="animate-fade-in-up">
           <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200 rounded-full text-blue-900 text-sm font-medium mb-8 animate-bounce-slow">
@@ -73,6 +73,11 @@ return (
                 Limited
               </span>
             </h1>
+            <div className="mt-4">
+              <span className="inline-block px-4 py-2 bg-blue-100 text-blue-900 rounded-lg text-sm font-medium">
+                Incorporated in 2012
+              </span>
+            </div>
           </div>
           <p className="text-2xl text-gray-600 mb-12 leading-relaxed animate-fade-in-up animation-delay-300 text-justify">
             A leading Engineering, Procurement and Construction (EPC) company specializing in electrical power systems 

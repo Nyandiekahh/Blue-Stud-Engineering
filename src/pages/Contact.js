@@ -28,7 +28,7 @@ const Contact = () => {
     lat: -1.4666295,
     lng: 36.9546105,
     name: "Blue Stud Engineering Ltd",
-    address: "High View Plaza, Kiambu Road, Thindigua"
+    address: "Kiambu Road, High View Plaza, 2nd Floor, Suite 12, Nairobi, Kenya"
   };
 
     const handleChange = (e) => {
@@ -88,7 +88,7 @@ const Contact = () => {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Blue Stud Engineering Ltd - High View Plaza, Kiambu Road"
+            title="Blue Stud Engineering Ltd - Kiambu Road, High View Plaza, 2nd Floor, Suite 12"
             class="rounded-t-2xl">
           </iframe>
         `;
@@ -410,6 +410,8 @@ Thank you!`;
                       <div>
                         <p className="font-medium text-gray-900">Phone & WhatsApp</p>
                         <a href="tel:+254768967878" className="text-blue-900 hover:text-gray-900 transition-colors">+254 768 967 878</a>
+                        <br />
+                        <a href="tel:+254726028762" className="text-blue-900 hover:text-gray-900 transition-colors">+254 726 028 762</a>
                       </div>
                     </div>
 
@@ -510,8 +512,8 @@ Thank you!`;
                       </svg>
                       <span>
                         Blue Stud Engineering Ltd.<br />
-                        High View Plaza<br />
-                        Kiambu Road, Thindigua<br />
+                        Kiambu Road, High View Plaza<br />
+                        2nd Floor, Suite 12<br />
                         Nairobi, Kenya
                       </span>
                     </p>

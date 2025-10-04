@@ -41,19 +41,25 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-20">
+          <div className="flex justify-between h-24">
             <div className="flex items-center">
               {/* Logo */}
               <Link to="/" className="flex-shrink-0 flex items-center">
                 <img
                   src="/bel-logo.jpg"
                   alt="BEL Logo"
-                  className="h-16 w-16 rounded-lg object-contain"
+                  className="h-24 w-24 rounded-lg object-contain"
                 />
                 <div className="ml-4 flex flex-col leading-tight">
-                  <span className="text-blue-900 font-bold text-lg">Blue Stud</span>
-                  <span className="text-blue-900 font-bold text-lg">Engineering</span>
-                  <span className="text-blue-900 font-bold text-lg">Limited</span>
+                  <span className="text-blue-900 font-bold text-lg">
+                    <span className="text-2xl font-black">B</span>lue Stud
+                  </span>
+                  <span className="text-blue-900 font-bold text-lg">
+                    <span className="text-2xl font-black">E</span>ngineering
+                  </span>
+                  <span className="text-blue-900 font-bold text-lg">
+                    <span className="text-2xl font-black">L</span>imited
+                  </span>
                 </div>
               </Link>
             </div>
