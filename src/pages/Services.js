@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import SEOHead from '../components/SEOHead';
 
 const Services = () => {
@@ -103,6 +103,81 @@ const Services = () => {
       "Industrial Electrical Services",
       "Facility Management"
     ]
+  };
+
+  // Simple carousel for Installation & Construction images
+  const CarouselInstallation = () => {
+    const images = [
+      '/images/services/installation-construction-1.jpg',
+      '/images/services/installation-construction-2.jpg',
+      '/images/services/installation.jpg'
+    ];
+
+    const [index, setIndex] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
+
+    useEffect(() => {
+      if (isPaused) return;
+      const id = setInterval(() => {
+        setIndex((i) => (i + 1) % images.length);
+      }, 3500);
+      return () => clearInterval(id);
+    }, [isPaused, images.length]);
+
+    const prev = () => setIndex((i) => (i - 1 + images.length) % images.length);
+    const next = () => setIndex((i) => (i + 1) % images.length);
+
+    return (
+      <div
+        className="relative overflow-hidden rounded-2xl"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${index * 100}%)` }}>
+          {images.map((src, i) => (
+            <div key={i} className="w-full flex-shrink-0">
+              <div className="relative">
+                <img src={src} alt={`Installation ${i + 1}`} className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-2xl shadow-xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Controls */}
+        <button
+          aria-label="Previous"
+          onClick={prev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-900 rounded-full p-2 shadow-md"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button
+          aria-label="Next"
+          onClick={next}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-900 rounded-full p-2 shadow-md"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        {/* Indicators */}
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              aria-label={`Go to slide ${i + 1}`}
+              className={`w-2 h-2 rounded-full ${i === index ? 'bg-white' : 'bg-white/50'} shadow`}
+            />
+          ))}
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -247,39 +322,9 @@ const Services = () => {
             </div>
             
             <div className="lg:order-1">
-              {/* Installation & Construction Photo Gallery */}
-              <div className="space-y-6">
-                <div className="relative group">
-                  <div className="absolute -inset-2 bg-gradient-to-r from-orange-100 to-blue-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
-                  <div className="relative">
-                    <img 
-                      src="/images/services/installation-construction-1.jpg" 
-                      alt="Installation & Construction - Transformer crane installation and heavy equipment expertise"
-                      className="w-full h-64 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="text-lg font-semibold mb-1">Heavy Installation</p>
-                      <p className="text-sm opacity-90">Transformer & crane operations</p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="relative group">
-                  <div className="absolute -inset-2 bg-gradient-to-r from-blue-100 to-orange-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
-                  <div className="relative">
-                    <img 
-                      src="/images/services/installation-construction-2.jpg" 
-                      alt="Installation & Construction - Electrical system installation and construction work"
-                      className="w-full h-64 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <p className="text-lg font-semibold mb-1">System Construction</p>
-                      <p className="text-sm opacity-90">Electrical installation work</p>
-                    </div>
-                  </div>
-                </div>
+              {/* Installation & Construction Photo Carousel */}
+              <div className="relative">
+                <CarouselInstallation />
               </div>
             </div>
           </div>
