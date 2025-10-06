@@ -695,7 +695,7 @@ const Services = () => {
                   <p className="text-gray-700">• SVEKER 750 relay test unit</p>
                   <p className="text-gray-700">• OMICRON CPC100 Universal primary injection test set</p>
                   <p className="text-gray-700">• OMICRON CT Analyzer Current transformer testing, calibration and assessment</p>
-                  <p className="text-gray-700">• FRAX series sweep frequency response analyser (SFRA)</p>
+                  <p className="text-gray-700">• Omicron Franeo 800 Sweep Frequency Response Analyser (SFRA)</p>
                   <p className="text-gray-700">• Frida Very Low Frequency (VLF) Test set</p>
                   <p className="text-gray-700">• MEGGER DIGITAL Low Resistance Ohmmeter DLRO 200 + 95MM² heavy duty jumper cables</p>
                   <p className="text-gray-700">• MEGGER MIT520-2 5KV Insulation Resistance Tester</p>
