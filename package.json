@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "ajv": "^6.12.6",
+    "ajv-formats": "^1.6.1",
     "ajv-keywords": "^3.5.2",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
@@ -46,6 +47,7 @@
   },
   "overrides": {
     "ajv": "^6.12.6",
+    "ajv-formats": "^1.6.1",
     "ajv-keywords": "^3.5.2"
   }
 }
