@@ -28,7 +28,7 @@ const Contact = () => {
     lat: -1.4666295,
     lng: 36.9546105,
     name: "Blue Stud Engineering Ltd",
-    address: "Kiambu Road, High View Plaza, 2nd Floor, Suite 12, Nairobi, Kenya"
+    address: "Kiambu Road, Nairobi Kenya, Highview Plaza"
   };
 
     const handleChange = (e) => {
@@ -88,7 +88,7 @@ const Contact = () => {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="Blue Stud Engineering Ltd - Kiambu Road, High View Plaza, 2nd Floor, Suite 12"
+            title="Blue Stud Engineering Ltd - Kiambu Road, Nairobi Kenya, Highview Plaza"
             class="rounded-t-2xl">
           </iframe>
         `;
@@ -399,7 +399,8 @@ Thank you!`;
                       </svg>
                       <div>
                         <p className="font-medium text-gray-900">Physical Address</p>
-                        <p className="text-gray-600">Nairobi, Kenya</p>
+                        <p className="text-gray-600">Kiambu Road, Nairobi Kenya</p>
+                        <p className="text-gray-600">Highview Plaza</p>
                       </div>
                     </div>
 
@@ -512,9 +513,8 @@ Thank you!`;
                       </svg>
                       <span>
                         Blue Stud Engineering Ltd.<br />
-                        Kiambu Road, High View Plaza<br />
-                        2nd Floor, Suite 12<br />
-                        Nairobi, Kenya
+                        Kiambu Road, Nairobi Kenya<br />
+                        Highview Plaza
                       </span>
                     </p>
                   </div>
