@@ -180,6 +180,231 @@ const Services = () => {
     );
   };
 
+  // Simple carousel for Testing & Commissioning images
+  const CarouselTestingCommissioning = () => {
+    const images = [
+      '/images/services/testing-commissioning-services-1.jpg',
+      '/images/services/testing-commissioning-services-2.jpg'
+    ];
+
+    const [index, setIndex] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
+
+    useEffect(() => {
+      if (isPaused) return;
+      const id = setInterval(() => {
+        setIndex((i) => (i + 1) % images.length);
+      }, 4000);
+      return () => clearInterval(id);
+    }, [isPaused, images.length]);
+
+    const prev = () => setIndex((i) => (i - 1 + images.length) % images.length);
+    const next = () => setIndex((i) => (i + 1) % images.length);
+
+    return (
+      <div
+        className="relative overflow-hidden rounded-2xl"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${index * 100}%)` }}>
+          {images.map((src, i) => (
+            <div key={i} className="w-full flex-shrink-0">
+              <div className="relative">
+                <img src={src} alt={`Testing & Commissioning ${i + 1}`} className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-2xl shadow-xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Controls */}
+        <button
+          aria-label="Previous"
+          onClick={prev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-900 rounded-full p-2 shadow-md"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button
+          aria-label="Next"
+          onClick={next}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-900 rounded-full p-2 shadow-md"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        {/* Indicators */}
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              aria-label={`Go to slide ${i + 1}`}
+              className={`w-2 h-2 rounded-full ${i === index ? 'bg-white' : 'bg-white/50'} shadow`}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  };
+
+  // Simple carousel for Hire of Test Equipment images
+  const CarouselTestEquipment = () => {
+    const images = [
+      '/images/services/hire of test equipment.jpeg',
+      '/images/services/hire of test equipment 1.jpeg',
+      '/images/services/hire of test equipment 2.jpeg',
+      '/images/services/hire of test equipment 3.jpeg'
+    ];
+
+    const [index, setIndex] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
+
+    useEffect(() => {
+      if (isPaused) return;
+      const id = setInterval(() => {
+        setIndex((i) => (i + 1) % images.length);
+      }, 3500);
+      return () => clearInterval(id);
+    }, [isPaused, images.length]);
+
+    const prev = () => setIndex((i) => (i - 1 + images.length) % images.length);
+    const next = () => setIndex((i) => (i + 1) % images.length);
+
+    return (
+      <div
+        className="relative overflow-hidden rounded-2xl"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${index * 100}%)` }}>
+          {images.map((src, i) => (
+            <div key={i} className="w-full flex-shrink-0">
+              <div className="relative">
+                <img src={src} alt={`Test Equipment ${i + 1}`} className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-2xl shadow-xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Controls */}
+        <button
+          aria-label="Previous"
+          onClick={prev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-900 rounded-full p-2 shadow-md"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button
+          aria-label="Next"
+          onClick={next}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-900 rounded-full p-2 shadow-md"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        {/* Indicators */}
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              aria-label={`Go to slide ${i + 1}`}
+              className={`w-2 h-2 rounded-full ${i === index ? 'bg-white' : 'bg-white/50'} shadow`}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  };
+
+  // Simple carousel for Power Systems Training images
+  const CarouselTraining = () => {
+    const images = [
+      '/images/services/power systems training 1.jpeg',
+      '/images/services/power systems training 2.jpeg',
+      '/images/services/power systems training 3.jpeg'
+    ];
+
+    const [index, setIndex] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
+
+    useEffect(() => {
+      if (isPaused) return;
+      const id = setInterval(() => {
+        setIndex((i) => (i + 1) % images.length);
+      }, 4000);
+      return () => clearInterval(id);
+    }, [isPaused, images.length]);
+
+    const prev = () => setIndex((i) => (i - 1 + images.length) % images.length);
+    const next = () => setIndex((i) => (i + 1) % images.length);
+
+    return (
+      <div
+        className="relative overflow-hidden rounded-2xl"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        <div className="flex transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${index * 100}%)` }}>
+          {images.map((src, i) => (
+            <div key={i} className="w-full flex-shrink-0">
+              <div className="relative">
+                <img src={src} alt={`Power Systems Training ${i + 1}`} className="w-full h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-2xl shadow-xl" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Controls */}
+        <button
+          aria-label="Previous"
+          onClick={prev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-900 rounded-full p-2 shadow-md"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button
+          aria-label="Next"
+          onClick={next}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-blue-900 rounded-full p-2 shadow-md"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        {/* Indicators */}
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              aria-label={`Go to slide ${i + 1}`}
+              className={`w-2 h-2 rounded-full ${i === index ? 'bg-white' : 'bg-white/50'} shadow`}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
       <SEOHead 
@@ -382,17 +607,19 @@ const Services = () => {
             </div>
             
             <div>
-              {/* Power Lines Construction Photo - PLACEHOLDER */}
+              {/* Power Lines Construction Photo */}
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-900 to-gray-900 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500"></div>
-                <div className="relative bg-gray-100 rounded-2xl h-96 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <svg className="w-24 h-24 mx-auto mb-4 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
-                    </svg>
-                    <p className="text-xl font-semibold text-gray-700 mb-2">Power Lines Construction</p>
-                    <p className="text-sm text-gray-500">Photo placeholder - Add power lines construction image</p>
-                    <p className="text-xs text-gray-400 mt-4">Recommended: LV/MV power line installation work</p>
+                <div className="relative">
+                  <img 
+                    src="/images/gallery/power lines construction.jpeg" 
+                    alt="Power Lines Construction - LV/MV power line installation work"
+                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-lg font-semibold mb-1">Power Lines Construction</p>
+                    <p className="text-sm opacity-90">Professional power line installation</p>
                   </div>
                 </div>
               </div>
@@ -449,21 +676,9 @@ const Services = () => {
             </div>
             
             <div className="lg:order-1">
-              {/* Testing & Commissioning Services Photo */}
-              <div className="relative group">
-                <div className="absolute -inset-2 bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
-                <div className="relative">
-                  <img 
-                    src="/images/services/testing-commissioning-services-1.jpg" 
-                    alt="Testing & Commissioning Services - Professional testing and commissioning by certified engineers"
-                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <p className="text-lg font-semibold mb-1">Testing & Commissioning</p>
-                    <p className="text-sm opacity-90">Professional testing and commissioning</p>
-                  </div>
-                </div>
+              {/* Testing & Commissioning Services Photo Carousel */}
+              <div className="relative">
+                <CarouselTestingCommissioning />
               </div>
             </div>
           </div>
@@ -618,17 +833,19 @@ const Services = () => {
             </div>
             
             <div className="lg:order-1">
-              {/* Transformer Services Photo - PLACEHOLDER */}
+              {/* Transformer Services Photo */}
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-900 to-gray-900 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500"></div>
-                <div className="relative bg-gray-100 rounded-2xl h-96 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <svg className="w-24 h-24 mx-auto mb-4 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                    <p className="text-xl font-semibold text-gray-700 mb-2">Transformer Services</p>
-                    <p className="text-sm text-gray-500">Photo placeholder - Add transformer services image</p>
-                    <p className="text-xs text-gray-400 mt-4">Recommended: Transformer installation or maintenance work</p>
+                <div className="relative">
+                  <img 
+                    src="/images/services/transformer services.jpeg" 
+                    alt="Transformer Services - Comprehensive transformer installation, maintenance, and repair services"
+                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-lg font-semibold mb-1">Transformer Services</p>
+                    <p className="text-sm opacity-90">Professional transformer solutions</p>
                   </div>
                 </div>
               </div>
@@ -666,17 +883,19 @@ const Services = () => {
             </div>
             
             <div>
-              {/* Power Quality Analysis Photo - PLACEHOLDER */}
+              {/* Power Quality Analysis Photo */}
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-900 to-gray-900 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500"></div>
-                <div className="relative bg-gray-100 rounded-2xl h-96 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <svg className="w-24 h-24 mx-auto mb-4 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                    </svg>
-                    <p className="text-xl font-semibold text-gray-700 mb-2">Power Quality Analysis</p>
-                    <p className="text-sm text-gray-500">Photo placeholder - Add power quality analysis image</p>
-                    <p className="text-xs text-gray-400 mt-4">Recommended: Power quality testing equipment in use</p>
+                <div className="relative">
+                  <img 
+                    src="/images/services/power quality analysis.jpeg" 
+                    alt="Power Quality Analysis - Advanced power quality testing and analysis services"
+                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <p className="text-lg font-semibold mb-1">Power Quality Analysis</p>
+                    <p className="text-sm opacity-90">Professional power quality assessment</p>
                   </div>
                 </div>
               </div>
@@ -723,19 +942,9 @@ const Services = () => {
             </div>
             
             <div className="lg:order-1">
-              {/* Hire of Test Equipment Photo - PLACEHOLDER */}
-              <div className="relative group">
-                <div className="absolute -inset-2 bg-gradient-to-r from-blue-900 to-gray-900 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-500"></div>
-                <div className="relative bg-gray-100 rounded-2xl h-96 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <svg className="w-24 h-24 mx-auto mb-4 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                    </svg>
-                    <p className="text-xl font-semibold text-gray-700 mb-2">Hire of Test Equipment</p>
-                    <p className="text-sm text-gray-500">Photo placeholder - Add test equipment image</p>
-                    <p className="text-xs text-gray-400 mt-4">Recommended: Professional testing equipment display</p>
-                  </div>
-                </div>
+              {/* Hire of Test Equipment Photo Carousel */}
+              <div className="relative">
+                <CarouselTestEquipment />
               </div>
             </div>
           </div>
@@ -808,21 +1017,9 @@ const Services = () => {
             </div>
             
             <div>
-              {/* Training Photo */}
-              <div className="relative group">
-                <div className="absolute -inset-2 bg-gradient-to-r from-yellow-100 to-blue-100 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
-                <div className="relative">
-                  <img 
-                    src="/images/services/training.jpg" 
-                    alt="Power Systems Training - Comprehensive training programs for electrical engineering professionals"
-                    className="w-full h-96 object-cover rounded-2xl shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-[1.02]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl"></div>
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <p className="text-lg font-semibold mb-1">Power Systems Training</p>
-                    <p className="text-sm opacity-90">Professional development programs</p>
-                  </div>
-                </div>
+              {/* Power Systems Training Photo Carousel */}
+              <div className="relative">
+                <CarouselTraining />
               </div>
             </div>
           </div>

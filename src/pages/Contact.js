@@ -25,8 +25,8 @@ const Contact = () => {
   
   // Office location (Blue Stud Engineering)
   const officeLocation = {
-    lat: -1.4666295,
-    lng: 36.9546105,
+    lat: -1.1974,
+    lng: 36.8365,
     name: "Blue Stud Engineering Ltd",
     address: "Kiambu Road, Nairobi Kenya, Highview Plaza"
   };
@@ -81,7 +81,7 @@ const Contact = () => {
         // Create a simple iframe map showing office location
         mapElement.innerHTML = `
           <iframe
-            src="https://maps.google.com/maps?q=-1.4666295,36.9546105&hl=en&z=16&output=embed"
+            src="https://maps.google.com/maps?q=-1.1974,36.8365&hl=en&z=16&output=embed"
             width="100%"
             height="100%"
             style="border: 0;"
@@ -111,7 +111,7 @@ const Contact = () => {
                   const userLng = position.coords.longitude;
                   
                   // Open Google Maps with directions from user location to office
-                  const directionsUrl = `https://www.google.com/maps/dir/${userLat},${userLng}/-1.4666295,36.9546105`;
+                  const directionsUrl = `https://www.google.com/maps/dir/${userLat},${userLng}/-1.1974,36.8365`;
                   window.open(directionsUrl, '_blank');
                   
                   locateBtn.innerHTML = '<span>🗺️ Directions Opened</span>';
@@ -524,7 +524,7 @@ Thank you!`;
                   <h3 className="text-lg font-semibold text-blue-900 mb-3">Get Directions</h3>
                   <div className="space-y-3">
                     <a
-                      href="https://maps.app.goo.gl/4SUzfXgGKLBcpDk38"
+                      href="https://maps.app.goo.gl/XJL6Mck2XGme2Qyg9"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
