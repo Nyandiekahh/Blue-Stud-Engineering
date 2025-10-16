@@ -539,10 +539,7 @@ const Services = () => {
               </div>
               
               <div className="space-y-2">
-                <p className="text-gray-700">• Ring Main Units (RMUs)</p>
-                <p className="text-gray-700">• Motor Control Centers (MCC)</p>
-                <p className="text-gray-700">• Soft starters</p>
-                <p className="text-gray-700">• Distribution lines installation</p>
+                {/* Removed: RMUs, MCC, Soft starters, Distribution lines installation */}
               </div>
             </div>
             
