@@ -14,6 +14,7 @@ import Products from './pages/Products';
 import Engineers from './pages/Engineers';
 import FacilityManagement from './pages/FacilityManagement';
 import Contact from './pages/Contact';
+import Careers from './pages/Careers';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,6 +52,7 @@ function App() {
                 <Route path="/engineers" element={<Engineers />} />
                 <Route path="/facility-management" element={<FacilityManagement />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/careers" element={<Careers />} />
               </Routes>
             </div>
             <Footer />
